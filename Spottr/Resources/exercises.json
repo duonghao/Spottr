@@ -1,0 +1,3482 @@
+[
+ {
+   "name": "ab crunch machine",
+   "group": " abdominals"
+ },
+ {
+   "name": "ab roller",
+   "group": " abdominals"
+ },
+ {
+   "name": "adductor",
+   "group": " adductors"
+ },
+ {
+   "name": "adductor/groin",
+   "group": " adductors"
+ },
+ {
+   "name": "advanced kettlebell windmill",
+   "group": " abdominals"
+ },
+ {
+   "name": "air bike",
+   "group": " abdominals"
+ },
+ {
+   "name": "all fours quad stretch",
+   "group": " quadriceps"
+ },
+ {
+   "name": "alternate hammer curl",
+   "group": " biceps"
+ },
+ {
+   "name": "alternate heel touchers",
+   "group": " abdominals"
+ },
+ {
+   "name": "alternate incline dumbbell curl",
+   "group": " biceps"
+ },
+ {
+   "name": "alternate leg diagonal bound",
+   "group": " quadriceps"
+ },
+ {
+   "name": "alternating cable shoulder press",
+   "group": " shoulders"
+ },
+ {
+   "name": "alternating deltoid raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "alternating floor press",
+   "group": " chest"
+ },
+ {
+   "name": "alternating hang clean",
+   "group": " hamstrings"
+ },
+ {
+   "name": "alternating kettlebell press",
+   "group": " shoulders"
+ },
+ {
+   "name": "alternating kettlebell row",
+   "group": " middle back"
+ },
+ {
+   "name": "alternating renegade row",
+   "group": " middle back"
+ },
+ {
+   "name": "ankle circles",
+   "group": " calves"
+ },
+ {
+   "name": "ankle on the knee",
+   "group": " glutes"
+ },
+ {
+   "name": "anterior tibialis-smr",
+   "group": " calves"
+ },
+ {
+   "name": "anti-gravity press",
+   "group": " shoulders"
+ },
+ {
+   "name": "arm circles",
+   "group": " shoulders"
+ },
+ {
+   "name": "arnold dumbbell press",
+   "group": " shoulders"
+ },
+ {
+   "name": "around the worlds",
+   "group": " chest"
+ },
+ {
+   "name": "atlas stone trainer",
+   "group": " lower back"
+ },
+ {
+   "name": "atlas stones",
+   "group": " lower back"
+ },
+ {
+   "name": "axle deadlift",
+   "group": " lower back"
+ },
+ {
+   "name": "back flyes - with bands",
+   "group": " shoulders"
+ },
+ {
+   "name": "backward drag",
+   "group": " quadriceps"
+ },
+ {
+   "name": "backward medicine ball throw",
+   "group": " shoulders"
+ },
+ {
+   "name": "balance board",
+   "group": " calves"
+ },
+ {
+   "name": "ball leg curl",
+   "group": " hamstrings"
+ },
+ {
+   "name": "band assisted pull-up",
+   "group": " lats"
+ },
+ {
+   "name": "band good morning",
+   "group": " hamstrings"
+ },
+ {
+   "name": "band good morning (pull through)",
+   "group": " hamstrings"
+ },
+ {
+   "name": "band hip adductions",
+   "group": " adductors"
+ },
+ {
+   "name": "band pull apart",
+   "group": " shoulders"
+ },
+ {
+   "name": "band skull crusher",
+   "group": " triceps"
+ },
+ {
+   "name": "barbell ab rollout",
+   "group": " abdominals"
+ },
+ {
+   "name": "barbell ab rollout - on knees",
+   "group": " abdominals"
+ },
+ {
+   "name": "barbell bench press - medium grip",
+   "group": " chest"
+ },
+ {
+   "name": "barbell curl",
+   "group": " biceps"
+ },
+ {
+   "name": "barbell curls lying against an incline",
+   "group": " biceps"
+ },
+ {
+   "name": "barbell deadlift",
+   "group": " lower back"
+ },
+ {
+   "name": "barbell full squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "barbell glute bridge",
+   "group": " glutes"
+ },
+ {
+   "name": "barbell guillotine bench press",
+   "group": " chest"
+ },
+ {
+   "name": "barbell hack squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "barbell hip thrust",
+   "group": " glutes"
+ },
+ {
+   "name": "barbell incline bench press - medium grip",
+   "group": " chest"
+ },
+ {
+   "name": "barbell incline shoulder raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "barbell lunge",
+   "group": " quadriceps"
+ },
+ {
+   "name": "barbell rear delt row",
+   "group": " shoulders"
+ },
+ {
+   "name": "barbell rollout from bench",
+   "group": " abdominals"
+ },
+ {
+   "name": "barbell seated calf raise",
+   "group": " calves"
+ },
+ {
+   "name": "barbell shoulder press",
+   "group": " shoulders"
+ },
+ {
+   "name": "barbell shrug",
+   "group": " traps"
+ },
+ {
+   "name": "barbell shrug behind the back",
+   "group": " traps"
+ },
+ {
+   "name": "barbell side bend",
+   "group": " abdominals"
+ },
+ {
+   "name": "barbell side split squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "barbell squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "barbell squat to a bench",
+   "group": " quadriceps"
+ },
+ {
+   "name": "barbell step ups",
+   "group": " quadriceps"
+ },
+ {
+   "name": "barbell walking lunge",
+   "group": " quadriceps"
+ },
+ {
+   "name": "battling ropes",
+   "group": " shoulders"
+ },
+ {
+   "name": "bear crawl sled drags",
+   "group": " quadriceps"
+ },
+ {
+   "name": "behind head chest stretch",
+   "group": " chest"
+ },
+ {
+   "name": "bench dips",
+   "group": " triceps"
+ },
+ {
+   "name": "bench jump",
+   "group": " quadriceps"
+ },
+ {
+   "name": "bench press - powerlifting",
+   "group": " triceps"
+ },
+ {
+   "name": "bench press - with bands",
+   "group": " chest"
+ },
+ {
+   "name": "bench press with chains",
+   "group": " triceps"
+ },
+ {
+   "name": "bench sprint",
+   "group": " quadriceps"
+ },
+ {
+   "name": "bent over barbell row",
+   "group": " middle back"
+ },
+ {
+   "name": "bent over dumbbell rear delt raise with head on bench",
+   "group": " shoulders"
+ },
+ {
+   "name": "bent over low-pulley side lateral",
+   "group": " shoulders"
+ },
+ {
+   "name": "bent over one-arm long bar row",
+   "group": " middle back"
+ },
+ {
+   "name": "bent over two-arm long bar row",
+   "group": " middle back"
+ },
+ {
+   "name": "bent over two-dumbbell row",
+   "group": " middle back"
+ },
+ {
+   "name": "bent over two-dumbbell row with palms in",
+   "group": " middle back"
+ },
+ {
+   "name": "bent press",
+   "group": " abdominals"
+ },
+ {
+   "name": "bent-arm barbell pullover",
+   "group": " lats"
+ },
+ {
+   "name": "bent-arm dumbbell pullover",
+   "group": " chest"
+ },
+ {
+   "name": "bent-knee hip raise",
+   "group": " abdominals"
+ },
+ {
+   "name": "bicycling",
+   "group": " quadriceps"
+ },
+ {
+   "name": "board press",
+   "group": " triceps"
+ },
+ {
+   "name": "body tricep press",
+   "group": " triceps"
+ },
+ {
+   "name": "body-up",
+   "group": " triceps"
+ },
+ {
+   "name": "bodyweight flyes",
+   "group": " chest"
+ },
+ {
+   "name": "bodyweight mid row",
+   "group": " middle back"
+ },
+ {
+   "name": "bodyweight squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "bodyweight walking lunge",
+   "group": " quadriceps"
+ },
+ {
+   "name": "bosu ball cable crunch with side bends",
+   "group": " abdominals"
+ },
+ {
+   "name": "bottoms up",
+   "group": " abdominals"
+ },
+ {
+   "name": "bottoms-up clean from the hang position",
+   "group": " forearms"
+ },
+ {
+   "name": "box jump (multiple response)",
+   "group": " hamstrings"
+ },
+ {
+   "name": "box skip",
+   "group": " hamstrings"
+ },
+ {
+   "name": "box squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "box squat with bands",
+   "group": " quadriceps"
+ },
+ {
+   "name": "box squat with chains",
+   "group": " quadriceps"
+ },
+ {
+   "name": "brachialis-smr",
+   "group": " biceps"
+ },
+ {
+   "name": "bradford/rocky presses",
+   "group": " shoulders"
+ },
+ {
+   "name": "butt lift (bridge)",
+   "group": " glutes"
+ },
+ {
+   "name": "butt-ups",
+   "group": " abdominals"
+ },
+ {
+   "name": "butterfly",
+   "group": " chest"
+ },
+ {
+   "name": "cable chest press",
+   "group": " chest"
+ },
+ {
+   "name": "cable crossover",
+   "group": " chest"
+ },
+ {
+   "name": "cable crunch",
+   "group": " abdominals"
+ },
+ {
+   "name": "cable deadlifts",
+   "group": " quadriceps"
+ },
+ {
+   "name": "cable hammer curls - rope attachment",
+   "group": " biceps"
+ },
+ {
+   "name": "cable hip adduction",
+   "group": " quadriceps"
+ },
+ {
+   "name": "cable incline pushdown",
+   "group": " lats"
+ },
+ {
+   "name": "cable incline triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "cable internal rotation",
+   "group": " shoulders"
+ },
+ {
+   "name": "cable iron cross",
+   "group": " chest"
+ },
+ {
+   "name": "cable judo flip",
+   "group": " abdominals"
+ },
+ {
+   "name": "cable lying triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "cable one arm tricep extension",
+   "group": " triceps"
+ },
+ {
+   "name": "cable preacher curl",
+   "group": " biceps"
+ },
+ {
+   "name": "cable rear delt fly",
+   "group": " shoulders"
+ },
+ {
+   "name": "cable reverse crunch",
+   "group": " abdominals"
+ },
+ {
+   "name": "cable rope overhead triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "cable rope rear-delt rows",
+   "group": " shoulders"
+ },
+ {
+   "name": "cable russian twists",
+   "group": " abdominals"
+ },
+ {
+   "name": "cable seated crunch",
+   "group": " abdominals"
+ },
+ {
+   "name": "cable seated lateral raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "cable shoulder press",
+   "group": " shoulders"
+ },
+ {
+   "name": "cable shrugs",
+   "group": " traps"
+ },
+ {
+   "name": "cable tuck reverse crunch",
+   "group": " abdominals"
+ },
+ {
+   "name": "cable wrist curl",
+   "group": " forearms"
+ },
+ {
+   "name": "calf press",
+   "group": " calves"
+ },
+ {
+   "name": "calf press on the leg press machine",
+   "group": " calves"
+ },
+ {
+   "name": "calf raise on a dumbbell",
+   "group": " calves"
+ },
+ {
+   "name": "calf raises - with bands",
+   "group": " calves"
+ },
+ {
+   "name": "calf stretch elbows against wall",
+   "group": " calves"
+ },
+ {
+   "name": "calf stretch hands against wall",
+   "group": " calves"
+ },
+ {
+   "name": "calf-machine shoulder shrug",
+   "group": " traps"
+ },
+ {
+   "name": "calves-smr",
+   "group": " calves"
+ },
+ {
+   "name": "car deadlift",
+   "group": " quadriceps"
+ },
+ {
+   "name": "car drivers",
+   "group": " shoulders"
+ },
+ {
+   "name": "carioca quick step",
+   "group": " adductors"
+ },
+ {
+   "name": "cat stretch",
+   "group": " lower back"
+ },
+ {
+   "name": "catch and overhead throw",
+   "group": " lats"
+ },
+ {
+   "name": "chain handle extension",
+   "group": " triceps"
+ },
+ {
+   "name": "chain press",
+   "group": " chest"
+ },
+ {
+   "name": "chair leg extended stretch",
+   "group": " hamstrings"
+ },
+ {
+   "name": "chair lower back stretch",
+   "group": " lats"
+ },
+ {
+   "name": "chair squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "chair upper body stretch",
+   "group": " shoulders"
+ },
+ {
+   "name": "chest and front of shoulder stretch",
+   "group": " chest"
+ },
+ {
+   "name": "chest push (multiple response)",
+   "group": " chest"
+ },
+ {
+   "name": "chest push (single response)",
+   "group": " chest"
+ },
+ {
+   "name": "chest push from 3 point stance",
+   "group": " chest"
+ },
+ {
+   "name": "chest push with run release",
+   "group": " chest"
+ },
+ {
+   "name": "chest stretch on stability ball",
+   "group": " chest"
+ },
+ {
+   "name": "child's pose",
+   "group": " lower back"
+ },
+ {
+   "name": "chin to chest stretch",
+   "group": " neck"
+ },
+ {
+   "name": "chin-up",
+   "group": " lats"
+ },
+ {
+   "name": "circus bell",
+   "group": " shoulders"
+ },
+ {
+   "name": "clean",
+   "group": " hamstrings"
+ },
+ {
+   "name": "clean and jerk",
+   "group": " shoulders"
+ },
+ {
+   "name": "clean and press",
+   "group": " shoulders"
+ },
+ {
+   "name": "clean deadlift",
+   "group": " hamstrings"
+ },
+ {
+   "name": "clean from blocks",
+   "group": " quadriceps"
+ },
+ {
+   "name": "clean pull",
+   "group": " quadriceps"
+ },
+ {
+   "name": "clean shrug",
+   "group": " traps"
+ },
+ {
+   "name": "clock push-up",
+   "group": " chest"
+ },
+ {
+   "name": "close-grip barbell bench press",
+   "group": " triceps"
+ },
+ {
+   "name": "close-grip dumbbell press",
+   "group": " triceps"
+ },
+ {
+   "name": "close-grip ez bar curl",
+   "group": " biceps"
+ },
+ {
+   "name": "close-grip ez-bar curl with band",
+   "group": " biceps"
+ },
+ {
+   "name": "close-grip ez-bar press",
+   "group": " triceps"
+ },
+ {
+   "name": "close-grip front lat pulldown",
+   "group": " lats"
+ },
+ {
+   "name": "close-grip push-up off of a dumbbell",
+   "group": " triceps"
+ },
+ {
+   "name": "close-grip standing barbell curl",
+   "group": " biceps"
+ },
+ {
+   "name": "cocoons",
+   "group": " abdominals"
+ },
+ {
+   "name": "conan's wheel",
+   "group": " quadriceps"
+ },
+ {
+   "name": "concentration curls",
+   "group": " biceps"
+ },
+ {
+   "name": "cross body hammer curl",
+   "group": " biceps"
+ },
+ {
+   "name": "cross over - with bands",
+   "group": " chest"
+ },
+ {
+   "name": "cross-body crunch",
+   "group": " abdominals"
+ },
+ {
+   "name": "crossover reverse lunge",
+   "group": " lower back"
+ },
+ {
+   "name": "crucifix",
+   "group": " shoulders"
+ },
+ {
+   "name": "crunch - hands overhead",
+   "group": " abdominals"
+ },
+ {
+   "name": "crunch - legs on exercise ball",
+   "group": " abdominals"
+ },
+ {
+   "name": "crunches",
+   "group": " abdominals"
+ },
+ {
+   "name": "cuban press",
+   "group": " shoulders"
+ },
+ {
+   "name": "dancer's stretch",
+   "group": " lower back"
+ },
+ {
+   "name": "deadlift with bands",
+   "group": " lower back"
+ },
+ {
+   "name": "deadlift with chains",
+   "group": " lower back"
+ },
+ {
+   "name": "decline barbell bench press",
+   "group": " chest"
+ },
+ {
+   "name": "decline close-grip bench to skull crusher",
+   "group": " triceps"
+ },
+ {
+   "name": "decline crunch",
+   "group": " abdominals"
+ },
+ {
+   "name": "decline dumbbell bench press",
+   "group": " chest"
+ },
+ {
+   "name": "decline dumbbell flyes",
+   "group": " chest"
+ },
+ {
+   "name": "decline dumbbell triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "decline ez bar triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "decline oblique crunch",
+   "group": " abdominals"
+ },
+ {
+   "name": "decline push-up",
+   "group": " chest"
+ },
+ {
+   "name": "decline reverse crunch",
+   "group": " abdominals"
+ },
+ {
+   "name": "decline smith press",
+   "group": " chest"
+ },
+ {
+   "name": "deficit deadlift",
+   "group": " lower back"
+ },
+ {
+   "name": "depth jump leap",
+   "group": " quadriceps"
+ },
+ {
+   "name": "dip machine",
+   "group": " triceps"
+ },
+ {
+   "name": "dips - chest version",
+   "group": " chest"
+ },
+ {
+   "name": "dips - triceps version",
+   "group": " triceps"
+ },
+ {
+   "name": "donkey calf raises",
+   "group": " calves"
+ },
+ {
+   "name": "double kettlebell alternating hang clean",
+   "group": " hamstrings"
+ },
+ {
+   "name": "double kettlebell jerk",
+   "group": " shoulders"
+ },
+ {
+   "name": "double kettlebell push press",
+   "group": " shoulders"
+ },
+ {
+   "name": "double kettlebell snatch",
+   "group": " shoulders"
+ },
+ {
+   "name": "double kettlebell windmill",
+   "group": " abdominals"
+ },
+ {
+   "name": "double leg butt kick",
+   "group": " quadriceps"
+ },
+ {
+   "name": "downward facing balance",
+   "group": " glutes"
+ },
+ {
+   "name": "drag curl",
+   "group": " biceps"
+ },
+ {
+   "name": "drop push",
+   "group": " chest"
+ },
+ {
+   "name": "dumbbell alternate bicep curl",
+   "group": " biceps"
+ },
+ {
+   "name": "dumbbell bench press",
+   "group": " chest"
+ },
+ {
+   "name": "dumbbell bench press with neutral grip",
+   "group": " chest"
+ },
+ {
+   "name": "dumbbell bicep curl",
+   "group": " biceps"
+ },
+ {
+   "name": "dumbbell clean",
+   "group": " hamstrings"
+ },
+ {
+   "name": "dumbbell floor press",
+   "group": " triceps"
+ },
+ {
+   "name": "dumbbell flyes",
+   "group": " chest"
+ },
+ {
+   "name": "dumbbell incline row",
+   "group": " middle back"
+ },
+ {
+   "name": "dumbbell incline shoulder raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "dumbbell lunges",
+   "group": " quadriceps"
+ },
+ {
+   "name": "dumbbell lying one-arm rear lateral raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "dumbbell lying pronation",
+   "group": " forearms"
+ },
+ {
+   "name": "dumbbell lying rear lateral raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "dumbbell lying supination",
+   "group": " forearms"
+ },
+ {
+   "name": "dumbbell one-arm shoulder press",
+   "group": " shoulders"
+ },
+ {
+   "name": "dumbbell one-arm triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "dumbbell one-arm upright row",
+   "group": " shoulders"
+ },
+ {
+   "name": "dumbbell prone incline curl",
+   "group": " biceps"
+ },
+ {
+   "name": "dumbbell raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "dumbbell rear lunge",
+   "group": " quadriceps"
+ },
+ {
+   "name": "dumbbell scaption",
+   "group": " shoulders"
+ },
+ {
+   "name": "dumbbell seated box jump",
+   "group": " quadriceps"
+ },
+ {
+   "name": "dumbbell seated one-leg calf raise",
+   "group": " calves"
+ },
+ {
+   "name": "dumbbell shoulder press",
+   "group": " shoulders"
+ },
+ {
+   "name": "dumbbell shrug",
+   "group": " traps"
+ },
+ {
+   "name": "dumbbell side bend",
+   "group": " abdominals"
+ },
+ {
+   "name": "dumbbell squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "dumbbell squat to a bench",
+   "group": " quadriceps"
+ },
+ {
+   "name": "dumbbell step ups",
+   "group": " quadriceps"
+ },
+ {
+   "name": "dumbbell tricep extension -pronated grip",
+   "group": " triceps"
+ },
+ {
+   "name": "dynamic back stretch",
+   "group": " lats"
+ },
+ {
+   "name": "dynamic chest stretch",
+   "group": " chest"
+ },
+ {
+   "name": "elbow circles",
+   "group": " shoulders"
+ },
+ {
+   "name": "elbow to knee",
+   "group": " abdominals"
+ },
+ {
+   "name": "elbows back",
+   "group": " chest"
+ },
+ {
+   "name": "elevated back lunge",
+   "group": " quadriceps"
+ },
+ {
+   "name": "elevated cable rows",
+   "group": " lats"
+ },
+ {
+   "name": "elliptical trainer",
+   "group": " quadriceps"
+ },
+ {
+   "name": "exercise ball crunch",
+   "group": " abdominals"
+ },
+ {
+   "name": "exercise ball pull-in",
+   "group": " abdominals"
+ },
+ {
+   "name": "extended range one-arm kettlebell floor press",
+   "group": " chest"
+ },
+ {
+   "name": "external rotation",
+   "group": " shoulders"
+ },
+ {
+   "name": "external rotation with band",
+   "group": " shoulders"
+ },
+ {
+   "name": "external rotation with cable",
+   "group": " shoulders"
+ },
+ {
+   "name": "ez-bar curl",
+   "group": " biceps"
+ },
+ {
+   "name": "ez-bar skullcrusher",
+   "group": " triceps"
+ },
+ {
+   "name": "face pull",
+   "group": " shoulders"
+ },
+ {
+   "name": "farmer's walk",
+   "group": " forearms"
+ },
+ {
+   "name": "fast skipping",
+   "group": " quadriceps"
+ },
+ {
+   "name": "finger curls",
+   "group": " forearms"
+ },
+ {
+   "name": "flat bench cable flyes",
+   "group": " chest"
+ },
+ {
+   "name": "flat bench leg pull-in",
+   "group": " abdominals"
+ },
+ {
+   "name": "flat bench lying leg raise",
+   "group": " abdominals"
+ },
+ {
+   "name": "flexor incline dumbbell curls",
+   "group": " biceps"
+ },
+ {
+   "name": "floor glute-ham raise",
+   "group": " hamstrings"
+ },
+ {
+   "name": "floor press",
+   "group": " triceps"
+ },
+ {
+   "name": "floor press with chains",
+   "group": " triceps"
+ },
+ {
+   "name": "flutter kicks",
+   "group": " glutes"
+ },
+ {
+   "name": "foot-smr",
+   "group": " calves"
+ },
+ {
+   "name": "forward drag with press",
+   "group": " chest"
+ },
+ {
+   "name": "frankenstein squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "freehand jump squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "frog hops",
+   "group": " quadriceps"
+ },
+ {
+   "name": "frog sit-ups",
+   "group": " abdominals"
+ },
+ {
+   "name": "front barbell squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "front barbell squat to a bench",
+   "group": " quadriceps"
+ },
+ {
+   "name": "front box jump",
+   "group": " hamstrings"
+ },
+ {
+   "name": "front cable raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "front cone hops (or hurdle hops)",
+   "group": " quadriceps"
+ },
+ {
+   "name": "front dumbbell raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "front incline dumbbell raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "front leg raises",
+   "group": " hamstrings"
+ },
+ {
+   "name": "front plate raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "front raise and pullover",
+   "group": " chest"
+ },
+ {
+   "name": "front squat (clean grip)",
+   "group": " quadriceps"
+ },
+ {
+   "name": "front squats with two kettlebells",
+   "group": " quadriceps"
+ },
+ {
+   "name": "front two-dumbbell raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "full range-of-motion lat pulldown",
+   "group": " lats"
+ },
+ {
+   "name": "gironda sternum chins",
+   "group": " lats"
+ },
+ {
+   "name": "glute ham raise",
+   "group": " hamstrings"
+ },
+ {
+   "name": "glute kickback",
+   "group": " glutes"
+ },
+ {
+   "name": "goblet squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "good morning",
+   "group": " hamstrings"
+ },
+ {
+   "name": "good morning off pins",
+   "group": " hamstrings"
+ },
+ {
+   "name": "gorilla chin/crunch",
+   "group": " abdominals"
+ },
+ {
+   "name": "groin and back stretch",
+   "group": " adductors"
+ },
+ {
+   "name": "groiners",
+   "group": " adductors"
+ },
+ {
+   "name": "hack squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "hammer curls",
+   "group": " biceps"
+ },
+ {
+   "name": "hammer grip incline db bench press",
+   "group": " chest"
+ },
+ {
+   "name": "hamstring stretch",
+   "group": " hamstrings"
+ },
+ {
+   "name": "hamstring-smr",
+   "group": " hamstrings"
+ },
+ {
+   "name": "handstand push-ups",
+   "group": " shoulders"
+ },
+ {
+   "name": "hang clean",
+   "group": " quadriceps"
+ },
+ {
+   "name": "hang clean - below the knees",
+   "group": " quadriceps"
+ },
+ {
+   "name": "hang snatch",
+   "group": " hamstrings"
+ },
+ {
+   "name": "hang snatch - below knees",
+   "group": " hamstrings"
+ },
+ {
+   "name": "hanging bar good morning",
+   "group": " hamstrings"
+ },
+ {
+   "name": "hanging leg raise",
+   "group": " abdominals"
+ },
+ {
+   "name": "hanging pike",
+   "group": " abdominals"
+ },
+ {
+   "name": "heaving snatch balance",
+   "group": " quadriceps"
+ },
+ {
+   "name": "heavy bag thrust",
+   "group": " chest"
+ },
+ {
+   "name": "high cable curls",
+   "group": " biceps"
+ },
+ {
+   "name": "hip circles (prone)",
+   "group": " abductors"
+ },
+ {
+   "name": "hip crossover",
+   "group": ""
+ },
+ {
+   "name": "hip extension with bands",
+   "group": " glutes"
+ },
+ {
+   "name": "hip flexion with band",
+   "group": " quadriceps"
+ },
+ {
+   "name": "hip lift with band",
+   "group": " glutes"
+ },
+ {
+   "name": "hug a ball",
+   "group": " lower back"
+ },
+ {
+   "name": "hug knees to chest",
+   "group": " lower back"
+ },
+ {
+   "name": "hurdle hops",
+   "group": " hamstrings"
+ },
+ {
+   "name": "hyperextensions (back extensions)",
+   "group": " lower back"
+ },
+ {
+   "name": "hyperextensions with no hyperextension bench",
+   "group": " lower back"
+ },
+ {
+   "name": "iliotibial tract-smr",
+   "group": " abductors"
+ },
+ {
+   "name": "incline barbell triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "incline bench pull",
+   "group": " middle back"
+ },
+ {
+   "name": "incline cable chest press",
+   "group": " chest"
+ },
+ {
+   "name": "incline cable flye",
+   "group": " chest"
+ },
+ {
+   "name": "incline dumbbell bench with palms facing in",
+   "group": " chest"
+ },
+ {
+   "name": "incline dumbbell curl",
+   "group": " biceps"
+ },
+ {
+   "name": "incline dumbbell flyes",
+   "group": " chest"
+ },
+ {
+   "name": "incline dumbbell flyes - with a twist",
+   "group": " chest"
+ },
+ {
+   "name": "incline dumbbell press",
+   "group": " chest"
+ },
+ {
+   "name": "incline hammer curls",
+   "group": " biceps"
+ },
+ {
+   "name": "incline inner biceps curl",
+   "group": " biceps"
+ },
+ {
+   "name": "incline push-up",
+   "group": " chest"
+ },
+ {
+   "name": "incline push-up close-grip",
+   "group": " triceps"
+ },
+ {
+   "name": "incline push-up depth jump",
+   "group": " chest"
+ },
+ {
+   "name": "incline push-up medium",
+   "group": " chest"
+ },
+ {
+   "name": "incline push-up reverse grip",
+   "group": " chest"
+ },
+ {
+   "name": "incline push-up wide",
+   "group": " chest"
+ },
+ {
+   "name": "intermediate groin stretch",
+   "group": " hamstrings"
+ },
+ {
+   "name": "intermediate hip flexor and quad stretch",
+   "group": " quadriceps"
+ },
+ {
+   "name": "internal rotation with band",
+   "group": " shoulders"
+ },
+ {
+   "name": "inverted row",
+   "group": " middle back"
+ },
+ {
+   "name": "inverted row with straps",
+   "group": " middle back"
+ },
+ {
+   "name": "iron cross",
+   "group": " shoulders"
+ },
+ {
+   "name": "iron crosses (stretch)",
+   "group": " quadriceps"
+ },
+ {
+   "name": "isometric chest squeezes",
+   "group": " chest"
+ },
+ {
+   "name": "isometric neck exercise - front and back",
+   "group": " neck"
+ },
+ {
+   "name": "isometric neck exercise - sides",
+   "group": " neck"
+ },
+ {
+   "name": "isometric wipers",
+   "group": " chest"
+ },
+ {
+   "name": "it band and glute stretch",
+   "group": " abductors"
+ },
+ {
+   "name": "jackknife sit-up",
+   "group": " abdominals"
+ },
+ {
+   "name": "janda sit-up",
+   "group": " abdominals"
+ },
+ {
+   "name": "jefferson squats",
+   "group": " quadriceps"
+ },
+ {
+   "name": "jerk balance",
+   "group": " shoulders"
+ },
+ {
+   "name": "jerk dip squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "jm press",
+   "group": " triceps"
+ },
+ {
+   "name": "jogging-treadmill",
+   "group": " quadriceps"
+ },
+ {
+   "name": "keg load",
+   "group": " lower back"
+ },
+ {
+   "name": "kettlebell arnold press",
+   "group": " shoulders"
+ },
+ {
+   "name": "kettlebell dead clean",
+   "group": " hamstrings"
+ },
+ {
+   "name": "kettlebell figure 8",
+   "group": " abdominals"
+ },
+ {
+   "name": "kettlebell hang clean",
+   "group": " hamstrings"
+ },
+ {
+   "name": "kettlebell one-legged deadlift",
+   "group": " hamstrings"
+ },
+ {
+   "name": "kettlebell pass between the legs",
+   "group": " abdominals"
+ },
+ {
+   "name": "kettlebell pirate ships",
+   "group": " shoulders"
+ },
+ {
+   "name": "kettlebell pistol squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "kettlebell seated press",
+   "group": " shoulders"
+ },
+ {
+   "name": "kettlebell seesaw press",
+   "group": " shoulders"
+ },
+ {
+   "name": "kettlebell sumo high pull",
+   "group": " traps"
+ },
+ {
+   "name": "kettlebell thruster",
+   "group": " shoulders"
+ },
+ {
+   "name": "kettlebell turkish get-up (lunge style)",
+   "group": " shoulders"
+ },
+ {
+   "name": "kettlebell turkish get-up (squat style)",
+   "group": " shoulders"
+ },
+ {
+   "name": "kettlebell windmill",
+   "group": " abdominals"
+ },
+ {
+   "name": "kipping muscle up",
+   "group": " lats"
+ },
+ {
+   "name": "knee across the body",
+   "group": " glutes"
+ },
+ {
+   "name": "knee circles",
+   "group": " calves"
+ },
+ {
+   "name": "knee tuck jump",
+   "group": " hamstrings"
+ },
+ {
+   "name": "knee/hip raise on parallel bars",
+   "group": " abdominals"
+ },
+ {
+   "name": "kneeling arm drill",
+   "group": " shoulders"
+ },
+ {
+   "name": "kneeling cable crunch with alternating oblique twists",
+   "group": " abdominals"
+ },
+ {
+   "name": "kneeling cable triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "kneeling forearm stretch",
+   "group": " forearms"
+ },
+ {
+   "name": "kneeling high pulley row",
+   "group": " lats"
+ },
+ {
+   "name": "kneeling hip flexor",
+   "group": " quadriceps"
+ },
+ {
+   "name": "kneeling jump squat",
+   "group": " glutes"
+ },
+ {
+   "name": "kneeling single-arm high pulley row",
+   "group": " lats"
+ },
+ {
+   "name": "kneeling squat",
+   "group": " glutes"
+ },
+ {
+   "name": "landmine 180's",
+   "group": " abdominals"
+ },
+ {
+   "name": "landmine linear jammer",
+   "group": " shoulders"
+ },
+ {
+   "name": "lateral bound",
+   "group": " adductors"
+ },
+ {
+   "name": "lateral box jump",
+   "group": " adductors"
+ },
+ {
+   "name": "lateral cone hops",
+   "group": " adductors"
+ },
+ {
+   "name": "lateral raise - with bands",
+   "group": " shoulders"
+ },
+ {
+   "name": "latissimus dorsi-smr",
+   "group": " lats"
+ },
+ {
+   "name": "leg extensions",
+   "group": " quadriceps"
+ },
+ {
+   "name": "leg lift",
+   "group": " glutes"
+ },
+ {
+   "name": "leg press",
+   "group": " quadriceps"
+ },
+ {
+   "name": "leg pull-in",
+   "group": " abdominals"
+ },
+ {
+   "name": "leg-over floor press",
+   "group": " chest"
+ },
+ {
+   "name": "leg-up hamstring stretch",
+   "group": " hamstrings"
+ },
+ {
+   "name": "leverage chest press",
+   "group": " chest"
+ },
+ {
+   "name": "leverage deadlift",
+   "group": " quadriceps"
+ },
+ {
+   "name": "leverage decline chest press",
+   "group": " chest"
+ },
+ {
+   "name": "leverage high row",
+   "group": " middle back"
+ },
+ {
+   "name": "leverage incline chest press",
+   "group": " chest"
+ },
+ {
+   "name": "leverage iso row",
+   "group": " lats"
+ },
+ {
+   "name": "leverage shoulder press",
+   "group": " shoulders"
+ },
+ {
+   "name": "leverage shrug",
+   "group": " traps"
+ },
+ {
+   "name": "linear 3-part start technique",
+   "group": " hamstrings"
+ },
+ {
+   "name": "linear acceleration wall drill",
+   "group": " hamstrings"
+ },
+ {
+   "name": "linear depth jump",
+   "group": " quadriceps"
+ },
+ {
+   "name": "log lift",
+   "group": " shoulders"
+ },
+ {
+   "name": "london bridges",
+   "group": " lats"
+ },
+ {
+   "name": "looking at ceiling",
+   "group": " quadriceps"
+ },
+ {
+   "name": "low cable crossover",
+   "group": " chest"
+ },
+ {
+   "name": "low cable triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "low pulley row to neck",
+   "group": " shoulders"
+ },
+ {
+   "name": "lower back curl",
+   "group": " abdominals"
+ },
+ {
+   "name": "lower back-smr",
+   "group": " lower back"
+ },
+ {
+   "name": "lunge pass through",
+   "group": " hamstrings"
+ },
+ {
+   "name": "lunge sprint",
+   "group": " quadriceps"
+ },
+ {
+   "name": "lying bent leg groin",
+   "group": " adductors"
+ },
+ {
+   "name": "lying cable curl",
+   "group": " biceps"
+ },
+ {
+   "name": "lying cambered barbell row",
+   "group": " middle back"
+ },
+ {
+   "name": "lying close-grip bar curl on high pulley",
+   "group": " biceps"
+ },
+ {
+   "name": "lying close-grip barbell triceps extension behind the head",
+   "group": " triceps"
+ },
+ {
+   "name": "lying close-grip barbell triceps press to chin",
+   "group": " triceps"
+ },
+ {
+   "name": "lying crossover",
+   "group": " abductors"
+ },
+ {
+   "name": "lying dumbbell tricep extension",
+   "group": " triceps"
+ },
+ {
+   "name": "lying face down plate neck resistance",
+   "group": " neck"
+ },
+ {
+   "name": "lying face up plate neck resistance",
+   "group": " neck"
+ },
+ {
+   "name": "lying glute",
+   "group": " glutes"
+ },
+ {
+   "name": "lying hamstring",
+   "group": " hamstrings"
+ },
+ {
+   "name": "lying high bench barbell curl",
+   "group": " biceps"
+ },
+ {
+   "name": "lying leg curls",
+   "group": " hamstrings"
+ },
+ {
+   "name": "lying machine squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "lying one-arm lateral raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "lying prone quadriceps",
+   "group": " quadriceps"
+ },
+ {
+   "name": "lying rear delt raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "lying supine dumbbell curl",
+   "group": " biceps"
+ },
+ {
+   "name": "lying t-bar row",
+   "group": " middle back"
+ },
+ {
+   "name": "lying triceps press",
+   "group": " triceps"
+ },
+ {
+   "name": "machine bench press",
+   "group": " chest"
+ },
+ {
+   "name": "machine bicep curl",
+   "group": " biceps"
+ },
+ {
+   "name": "machine preacher curls",
+   "group": " biceps"
+ },
+ {
+   "name": "machine shoulder (military) press",
+   "group": " shoulders"
+ },
+ {
+   "name": "machine triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "medicine ball chest pass",
+   "group": " chest"
+ },
+ {
+   "name": "medicine ball full twist",
+   "group": " abdominals"
+ },
+ {
+   "name": "medicine ball scoop throw",
+   "group": " shoulders"
+ },
+ {
+   "name": "middle back shrug",
+   "group": " middle back"
+ },
+ {
+   "name": "middle back stretch",
+   "group": " middle back"
+ },
+ {
+   "name": "mixed grip chin",
+   "group": " middle back"
+ },
+ {
+   "name": "monster walk",
+   "group": " abductors"
+ },
+ {
+   "name": "mountain climbers",
+   "group": " quadriceps"
+ },
+ {
+   "name": "moving claw series",
+   "group": " hamstrings"
+ },
+ {
+   "name": "muscle snatch",
+   "group": " hamstrings"
+ },
+ {
+   "name": "muscle up",
+   "group": " lats"
+ },
+ {
+   "name": "narrow stance hack squats",
+   "group": " quadriceps"
+ },
+ {
+   "name": "narrow stance leg press",
+   "group": " quadriceps"
+ },
+ {
+   "name": "narrow stance squats",
+   "group": " quadriceps"
+ },
+ {
+   "name": "natural glute ham raise",
+   "group": " hamstrings"
+ },
+ {
+   "name": "neck press",
+   "group": " chest"
+ },
+ {
+   "name": "neck-smr",
+   "group": " neck"
+ },
+ {
+   "name": "oblique crunches",
+   "group": " abdominals"
+ },
+ {
+   "name": "oblique crunches - on the floor",
+   "group": " abdominals"
+ },
+ {
+   "name": "olympic squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "on your side quad stretch",
+   "group": " quadriceps"
+ },
+ {
+   "name": "on-your-back quad stretch",
+   "group": " quadriceps"
+ },
+ {
+   "name": "one arm against wall",
+   "group": " lats"
+ },
+ {
+   "name": "one arm chin-up",
+   "group": " middle back"
+ },
+ {
+   "name": "one arm dumbbell bench press",
+   "group": " chest"
+ },
+ {
+   "name": "one arm dumbbell preacher curl",
+   "group": " biceps"
+ },
+ {
+   "name": "one arm floor press",
+   "group": " triceps"
+ },
+ {
+   "name": "one arm lat pulldown",
+   "group": " lats"
+ },
+ {
+   "name": "one arm pronated dumbbell triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "one arm supinated dumbbell triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "one half locust",
+   "group": " quadriceps"
+ },
+ {
+   "name": "one handed hang",
+   "group": " lats"
+ },
+ {
+   "name": "one knee to chest",
+   "group": " glutes"
+ },
+ {
+   "name": "one leg barbell squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "one-arm dumbbell row",
+   "group": " middle back"
+ },
+ {
+   "name": "one-arm flat bench dumbbell flye",
+   "group": " chest"
+ },
+ {
+   "name": "one-arm high-pulley cable side bends",
+   "group": " abdominals"
+ },
+ {
+   "name": "one-arm incline lateral raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "one-arm kettlebell clean",
+   "group": " hamstrings"
+ },
+ {
+   "name": "one-arm kettlebell clean and jerk",
+   "group": " shoulders"
+ },
+ {
+   "name": "one-arm kettlebell floor press",
+   "group": " chest"
+ },
+ {
+   "name": "one-arm kettlebell jerk",
+   "group": " shoulders"
+ },
+ {
+   "name": "one-arm kettlebell military press to the side",
+   "group": " shoulders"
+ },
+ {
+   "name": "one-arm kettlebell para press",
+   "group": " shoulders"
+ },
+ {
+   "name": "one-arm kettlebell push press",
+   "group": " shoulders"
+ },
+ {
+   "name": "one-arm kettlebell row",
+   "group": " middle back"
+ },
+ {
+   "name": "one-arm kettlebell snatch",
+   "group": " shoulders"
+ },
+ {
+   "name": "one-arm kettlebell split jerk",
+   "group": " shoulders"
+ },
+ {
+   "name": "one-arm kettlebell split snatch",
+   "group": " shoulders"
+ },
+ {
+   "name": "one-arm kettlebell swings",
+   "group": " hamstrings"
+ },
+ {
+   "name": "one-arm long bar row",
+   "group": " middle back"
+ },
+ {
+   "name": "one-arm medicine ball slam",
+   "group": " abdominals"
+ },
+ {
+   "name": "one-arm open palm kettlebell clean",
+   "group": " hamstrings"
+ },
+ {
+   "name": "one-arm overhead kettlebell squats",
+   "group": " quadriceps"
+ },
+ {
+   "name": "one-arm side deadlift",
+   "group": " quadriceps"
+ },
+ {
+   "name": "one-arm side laterals",
+   "group": " shoulders"
+ },
+ {
+   "name": "one-legged cable kickback",
+   "group": " glutes"
+ },
+ {
+   "name": "open palm kettlebell clean",
+   "group": " hamstrings"
+ },
+ {
+   "name": "otis-up",
+   "group": " abdominals"
+ },
+ {
+   "name": "overhead cable curl",
+   "group": " biceps"
+ },
+ {
+   "name": "overhead lat",
+   "group": " lats"
+ },
+ {
+   "name": "overhead slam",
+   "group": " lats"
+ },
+ {
+   "name": "overhead squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "overhead stretch",
+   "group": " abdominals"
+ },
+ {
+   "name": "overhead triceps",
+   "group": " triceps"
+ },
+ {
+   "name": "pallof press with rotation",
+   "group": " abdominals"
+ },
+ {
+   "name": "palms-down dumbbell wrist curl over a bench",
+   "group": " forearms"
+ },
+ {
+   "name": "palms-down wrist curl over a bench",
+   "group": " forearms"
+ },
+ {
+   "name": "palms-up barbell wrist curl over a bench",
+   "group": " forearms"
+ },
+ {
+   "name": "palms-up dumbbell wrist curl over a bench",
+   "group": " forearms"
+ },
+ {
+   "name": "parallel bar dip",
+   "group": " triceps"
+ },
+ {
+   "name": "pelvic tilt into bridge",
+   "group": " lower back"
+ },
+ {
+   "name": "peroneals stretch",
+   "group": " calves"
+ },
+ {
+   "name": "peroneals-smr",
+   "group": " calves"
+ },
+ {
+   "name": "physioball hip bridge",
+   "group": " glutes"
+ },
+ {
+   "name": "pin presses",
+   "group": " triceps"
+ },
+ {
+   "name": "piriformis-smr",
+   "group": " glutes"
+ },
+ {
+   "name": "plank",
+   "group": " abdominals"
+ },
+ {
+   "name": "plank with twist",
+   "group": " "
+ },
+ {
+   "name": "plate pinch",
+   "group": " forearms"
+ },
+ {
+   "name": "plate twist",
+   "group": " abdominals"
+ },
+ {
+   "name": "platform hamstring slides",
+   "group": " hamstrings"
+ },
+ {
+   "name": "plie dumbbell squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "plyo kettlebell pushups",
+   "group": " chest"
+ },
+ {
+   "name": "plyo push-up",
+   "group": " chest"
+ },
+ {
+   "name": "posterior tibialis stretch",
+   "group": " calves"
+ },
+ {
+   "name": "power clean",
+   "group": " hamstrings"
+ },
+ {
+   "name": "power clean from blocks",
+   "group": " hamstrings"
+ },
+ {
+   "name": "power jerk",
+   "group": " quadriceps"
+ },
+ {
+   "name": "power partials",
+   "group": " shoulders"
+ },
+ {
+   "name": "power snatch",
+   "group": " hamstrings"
+ },
+ {
+   "name": "power snatch from blocks",
+   "group": " quadriceps"
+ },
+ {
+   "name": "power stairs",
+   "group": " hamstrings"
+ },
+ {
+   "name": "preacher curl",
+   "group": " biceps"
+ },
+ {
+   "name": "preacher hammer dumbbell curl",
+   "group": " biceps"
+ },
+ {
+   "name": "press sit-up",
+   "group": " abdominals"
+ },
+ {
+   "name": "prone manual hamstring",
+   "group": " hamstrings"
+ },
+ {
+   "name": "prowler sprint",
+   "group": " hamstrings"
+ },
+ {
+   "name": "pull through",
+   "group": " glutes"
+ },
+ {
+   "name": "pullups",
+   "group": " lats"
+ },
+ {
+   "name": "push press",
+   "group": " shoulders"
+ },
+ {
+   "name": "push press - behind the neck",
+   "group": " shoulders"
+ },
+ {
+   "name": "push up to side plank",
+   "group": " chest"
+ },
+ {
+   "name": "push-up wide",
+   "group": " chest"
+ },
+ {
+   "name": "push-ups - close triceps position",
+   "group": " triceps"
+ },
+ {
+   "name": "push-ups with feet elevated",
+   "group": " chest"
+ },
+ {
+   "name": "push-ups with feet on an exercise ball",
+   "group": " chest"
+ },
+ {
+   "name": "pushups",
+   "group": " chest"
+ },
+ {
+   "name": "pushups (close and wide hand positions)",
+   "group": " chest"
+ },
+ {
+   "name": "pyramid",
+   "group": " lower back"
+ },
+ {
+   "name": "quad stretch",
+   "group": " quadriceps"
+ },
+ {
+   "name": "quadriceps-smr",
+   "group": " quadriceps"
+ },
+ {
+   "name": "quick leap",
+   "group": " quadriceps"
+ },
+ {
+   "name": "rack delivery",
+   "group": " shoulders"
+ },
+ {
+   "name": "rack pull with bands",
+   "group": " lower back"
+ },
+ {
+   "name": "rack pulls",
+   "group": " lower back"
+ },
+ {
+   "name": "rear leg raises",
+   "group": " quadriceps"
+ },
+ {
+   "name": "recumbent bike",
+   "group": " quadriceps"
+ },
+ {
+   "name": "return push from stance",
+   "group": " shoulders"
+ },
+ {
+   "name": "reverse band bench press",
+   "group": " triceps"
+ },
+ {
+   "name": "reverse band box squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "reverse band deadlift",
+   "group": " lower back"
+ },
+ {
+   "name": "reverse band power squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "reverse band sumo deadlift",
+   "group": " hamstrings"
+ },
+ {
+   "name": "reverse barbell curl",
+   "group": " biceps"
+ },
+ {
+   "name": "reverse barbell preacher curls",
+   "group": " biceps"
+ },
+ {
+   "name": "reverse cable curl",
+   "group": " biceps"
+ },
+ {
+   "name": "reverse crunch",
+   "group": " abdominals"
+ },
+ {
+   "name": "reverse flyes",
+   "group": " shoulders"
+ },
+ {
+   "name": "reverse flyes with external rotation",
+   "group": " shoulders"
+ },
+ {
+   "name": "reverse grip bent-over rows",
+   "group": " middle back"
+ },
+ {
+   "name": "reverse grip triceps pushdown",
+   "group": " triceps"
+ },
+ {
+   "name": "reverse hyperextension",
+   "group": " hamstrings"
+ },
+ {
+   "name": "reverse machine flyes",
+   "group": " shoulders"
+ },
+ {
+   "name": "reverse plate curls",
+   "group": " biceps"
+ },
+ {
+   "name": "reverse triceps bench press",
+   "group": " triceps"
+ },
+ {
+   "name": "rhomboids-smr",
+   "group": " middle back"
+ },
+ {
+   "name": "rickshaw carry",
+   "group": " forearms"
+ },
+ {
+   "name": "rickshaw deadlift",
+   "group": " quadriceps"
+ },
+ {
+   "name": "ring dips",
+   "group": " triceps"
+ },
+ {
+   "name": "rocket jump",
+   "group": " quadriceps"
+ },
+ {
+   "name": "rocking standing calf raise",
+   "group": " calves"
+ },
+ {
+   "name": "rocky pull-ups/pulldowns",
+   "group": " lats"
+ },
+ {
+   "name": "romanian deadlift",
+   "group": " hamstrings"
+ },
+ {
+   "name": "romanian deadlift from deficit",
+   "group": " hamstrings"
+ },
+ {
+   "name": "rope climb",
+   "group": " lats"
+ },
+ {
+   "name": "rope crunch",
+   "group": " abdominals"
+ },
+ {
+   "name": "rope jumping",
+   "group": " quadriceps"
+ },
+ {
+   "name": "rope straight-arm pulldown",
+   "group": " lats"
+ },
+ {
+   "name": "round the world shoulder stretch",
+   "group": " shoulders"
+ },
+ {
+   "name": "rowing",
+   "group": " quadriceps"
+ },
+ {
+   "name": "runner's stretch",
+   "group": " hamstrings"
+ },
+ {
+   "name": "running",
+   "group": " quadriceps"
+ },
+ {
+   "name": "russian twist",
+   "group": " abdominals"
+ },
+ {
+   "name": "sandbag load",
+   "group": " quadriceps"
+ },
+ {
+   "name": "scapular pull-up",
+   "group": " traps"
+ },
+ {
+   "name": "scissor kick",
+   "group": " abdominals"
+ },
+ {
+   "name": "scissors jump",
+   "group": " quadriceps"
+ },
+ {
+   "name": "seated band hamstring curl",
+   "group": " hamstrings"
+ },
+ {
+   "name": "seated barbell military press",
+   "group": " shoulders"
+ },
+ {
+   "name": "seated barbell twist",
+   "group": " abdominals"
+ },
+ {
+   "name": "seated bent-over one-arm dumbbell triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "seated bent-over rear delt raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "seated bent-over two-arm dumbbell triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "seated biceps",
+   "group": " biceps"
+ },
+ {
+   "name": "seated cable rows",
+   "group": " middle back"
+ },
+ {
+   "name": "seated cable shoulder press",
+   "group": " shoulders"
+ },
+ {
+   "name": "seated calf raise",
+   "group": " calves"
+ },
+ {
+   "name": "seated calf stretch",
+   "group": " calves"
+ },
+ {
+   "name": "seated close-grip concentration barbell curl",
+   "group": " biceps"
+ },
+ {
+   "name": "seated dumbbell curl",
+   "group": " biceps"
+ },
+ {
+   "name": "seated dumbbell inner biceps curl",
+   "group": " biceps"
+ },
+ {
+   "name": "seated dumbbell palms-down wrist curl",
+   "group": " forearms"
+ },
+ {
+   "name": "seated dumbbell palms-up wrist curl",
+   "group": " forearms"
+ },
+ {
+   "name": "seated dumbbell press",
+   "group": " shoulders"
+ },
+ {
+   "name": "seated flat bench leg pull-in",
+   "group": " abdominals"
+ },
+ {
+   "name": "seated floor hamstring stretch",
+   "group": " hamstrings"
+ },
+ {
+   "name": "seated front deltoid",
+   "group": " shoulders"
+ },
+ {
+   "name": "seated glute",
+   "group": " glutes"
+ },
+ {
+   "name": "seated good mornings",
+   "group": " lower back"
+ },
+ {
+   "name": "seated hamstring",
+   "group": " hamstrings"
+ },
+ {
+   "name": "seated hamstring and calf stretch",
+   "group": " hamstrings"
+ },
+ {
+   "name": "seated head harness neck resistance",
+   "group": " neck"
+ },
+ {
+   "name": "seated leg curl",
+   "group": " hamstrings"
+ },
+ {
+   "name": "seated leg tucks",
+   "group": " abdominals"
+ },
+ {
+   "name": "seated one-arm cable pulley rows",
+   "group": " middle back"
+ },
+ {
+   "name": "seated one-arm dumbbell palms-down wrist curl",
+   "group": " forearms"
+ },
+ {
+   "name": "seated one-arm dumbbell palms-up wrist curl",
+   "group": " forearms"
+ },
+ {
+   "name": "seated overhead stretch",
+   "group": " abdominals"
+ },
+ {
+   "name": "seated palm-up barbell wrist curl",
+   "group": " forearms"
+ },
+ {
+   "name": "seated palms-down barbell wrist curl",
+   "group": " forearms"
+ },
+ {
+   "name": "seated side lateral raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "seated triceps press",
+   "group": " triceps"
+ },
+ {
+   "name": "seated two-arm palms-up low-pulley wrist curl",
+   "group": " forearms"
+ },
+ {
+   "name": "see-saw press (alternating side press)",
+   "group": " shoulders"
+ },
+ {
+   "name": "shotgun row",
+   "group": " lats"
+ },
+ {
+   "name": "shoulder circles",
+   "group": " shoulders"
+ },
+ {
+   "name": "shoulder press - with bands",
+   "group": " shoulders"
+ },
+ {
+   "name": "shoulder raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "shoulder stretch",
+   "group": " shoulders"
+ },
+ {
+   "name": "side bridge",
+   "group": " abdominals"
+ },
+ {
+   "name": "side hop-sprint",
+   "group": " quadriceps"
+ },
+ {
+   "name": "side jackknife",
+   "group": " abdominals"
+ },
+ {
+   "name": "side lateral raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "side laterals to front raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "side leg raises",
+   "group": " adductors"
+ },
+ {
+   "name": "side lying groin stretch",
+   "group": " adductors"
+ },
+ {
+   "name": "side neck stretch",
+   "group": " neck"
+ },
+ {
+   "name": "side standing long jump",
+   "group": " quadriceps"
+ },
+ {
+   "name": "side to side box shuffle",
+   "group": " quadriceps"
+ },
+ {
+   "name": "side to side chins",
+   "group": " lats"
+ },
+ {
+   "name": "side wrist pull",
+   "group": " shoulders"
+ },
+ {
+   "name": "side-lying floor stretch",
+   "group": " lats"
+ },
+ {
+   "name": "single dumbbell raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "single leg butt kick",
+   "group": " quadriceps"
+ },
+ {
+   "name": "single leg glute bridge",
+   "group": " glutes"
+ },
+ {
+   "name": "single leg push-off",
+   "group": " quadriceps"
+ },
+ {
+   "name": "single-arm cable crossover",
+   "group": " chest"
+ },
+ {
+   "name": "single-arm linear jammer",
+   "group": " shoulders"
+ },
+ {
+   "name": "single-arm push-up",
+   "group": " chest"
+ },
+ {
+   "name": "single-cone sprint drill",
+   "group": " quadriceps"
+ },
+ {
+   "name": "single-leg high box squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "single-leg hop progression",
+   "group": " quadriceps"
+ },
+ {
+   "name": "single-leg lateral hop",
+   "group": " quadriceps"
+ },
+ {
+   "name": "single-leg leg extension",
+   "group": " quadriceps"
+ },
+ {
+   "name": "single-leg stride jump",
+   "group": " quadriceps"
+ },
+ {
+   "name": "sit squats",
+   "group": " quadriceps"
+ },
+ {
+   "name": "sit-up",
+   "group": " abdominals"
+ },
+ {
+   "name": "skating",
+   "group": " quadriceps"
+ },
+ {
+   "name": "sled drag - harness",
+   "group": " quadriceps"
+ },
+ {
+   "name": "sled overhead backward walk",
+   "group": " shoulders"
+ },
+ {
+   "name": "sled overhead triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "sled push",
+   "group": " quadriceps"
+ },
+ {
+   "name": "sled reverse flye",
+   "group": " shoulders"
+ },
+ {
+   "name": "sled row",
+   "group": " middle back"
+ },
+ {
+   "name": "sledgehammer swings",
+   "group": " abdominals"
+ },
+ {
+   "name": "smith incline shoulder raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "smith machine behind the back shrug",
+   "group": " traps"
+ },
+ {
+   "name": "smith machine bench press",
+   "group": " chest"
+ },
+ {
+   "name": "smith machine bent over row",
+   "group": " middle back"
+ },
+ {
+   "name": "smith machine calf raise",
+   "group": " calves"
+ },
+ {
+   "name": "smith machine close-grip bench press",
+   "group": " triceps"
+ },
+ {
+   "name": "smith machine decline press",
+   "group": " chest"
+ },
+ {
+   "name": "smith machine hang power clean",
+   "group": " hamstrings"
+ },
+ {
+   "name": "smith machine hip raise",
+   "group": " abdominals"
+ },
+ {
+   "name": "smith machine incline bench press",
+   "group": " chest"
+ },
+ {
+   "name": "smith machine leg press",
+   "group": " quadriceps"
+ },
+ {
+   "name": "smith machine one-arm upright row",
+   "group": " shoulders"
+ },
+ {
+   "name": "smith machine overhead shoulder press",
+   "group": " shoulders"
+ },
+ {
+   "name": "smith machine pistol squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "smith machine reverse calf raises",
+   "group": " calves"
+ },
+ {
+   "name": "smith machine shrug",
+   "group": " traps"
+ },
+ {
+   "name": "smith machine squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "smith machine stiff-legged deadlift",
+   "group": " hamstrings"
+ },
+ {
+   "name": "smith machine upright row",
+   "group": " traps"
+ },
+ {
+   "name": "smith single-leg split squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "snatch",
+   "group": " quadriceps"
+ },
+ {
+   "name": "snatch balance",
+   "group": " quadriceps"
+ },
+ {
+   "name": "snatch deadlift",
+   "group": " hamstrings"
+ },
+ {
+   "name": "snatch from blocks",
+   "group": " quadriceps"
+ },
+ {
+   "name": "snatch pull",
+   "group": " hamstrings"
+ },
+ {
+   "name": "snatch shrug",
+   "group": " traps"
+ },
+ {
+   "name": "speed band overhead triceps",
+   "group": " triceps"
+ },
+ {
+   "name": "speed band pushdown",
+   "group": " triceps"
+ },
+ {
+   "name": "speed box squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "speed squats",
+   "group": " quadriceps"
+ },
+ {
+   "name": "spell caster",
+   "group": " abdominals"
+ },
+ {
+   "name": "spider crawl",
+   "group": " abdominals"
+ },
+ {
+   "name": "spider curl",
+   "group": " biceps"
+ },
+ {
+   "name": "spinal stretch",
+   "group": " middle back"
+ },
+ {
+   "name": "split clean",
+   "group": " quadriceps"
+ },
+ {
+   "name": "split jerk",
+   "group": " quadriceps"
+ },
+ {
+   "name": "split jump",
+   "group": " quadriceps"
+ },
+ {
+   "name": "split snatch",
+   "group": " hamstrings"
+ },
+ {
+   "name": "split squat with dumbbells",
+   "group": " quadriceps"
+ },
+ {
+   "name": "split squats",
+   "group": " hamstrings"
+ },
+ {
+   "name": "squat jerk",
+   "group": " quadriceps"
+ },
+ {
+   "name": "squat with bands",
+   "group": " quadriceps"
+ },
+ {
+   "name": "squat with chains",
+   "group": " quadriceps"
+ },
+ {
+   "name": "squat with plate movers",
+   "group": " quadriceps"
+ },
+ {
+   "name": "squats - with bands",
+   "group": " quadriceps"
+ },
+ {
+   "name": "stairmaster",
+   "group": " quadriceps"
+ },
+ {
+   "name": "standing alternating dumbbell press",
+   "group": " shoulders"
+ },
+ {
+   "name": "standing barbell calf raise",
+   "group": " calves"
+ },
+ {
+   "name": "standing barbell press behind neck",
+   "group": " shoulders"
+ },
+ {
+   "name": "standing bent-over one-arm dumbbell triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "standing bent-over two-arm dumbbell triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "standing biceps cable curl",
+   "group": " biceps"
+ },
+ {
+   "name": "standing biceps stretch",
+   "group": " biceps"
+ },
+ {
+   "name": "standing bradford press",
+   "group": " shoulders"
+ },
+ {
+   "name": "standing cable chest press",
+   "group": " chest"
+ },
+ {
+   "name": "standing cable lift",
+   "group": " abdominals"
+ },
+ {
+   "name": "standing cable wood chop",
+   "group": " abdominals"
+ },
+ {
+   "name": "standing calf raises",
+   "group": " calves"
+ },
+ {
+   "name": "standing concentration curl",
+   "group": " biceps"
+ },
+ {
+   "name": "standing dumbbell calf raise",
+   "group": " calves"
+ },
+ {
+   "name": "standing dumbbell press",
+   "group": " shoulders"
+ },
+ {
+   "name": "standing dumbbell reverse curl",
+   "group": " biceps"
+ },
+ {
+   "name": "standing dumbbell straight-arm front delt raise above head",
+   "group": " shoulders"
+ },
+ {
+   "name": "standing dumbbell triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "standing dumbbell upright row",
+   "group": " traps"
+ },
+ {
+   "name": "standing elevated quad stretch",
+   "group": " quadriceps"
+ },
+ {
+   "name": "standing front barbell raise over head",
+   "group": " shoulders"
+ },
+ {
+   "name": "standing gastrocnemius calf stretch",
+   "group": " calves"
+ },
+ {
+   "name": "standing hamstring and calf stretch",
+   "group": " hamstrings"
+ },
+ {
+   "name": "standing hip circles",
+   "group": " abductors"
+ },
+ {
+   "name": "standing hip flexors",
+   "group": " quadriceps"
+ },
+ {
+   "name": "standing inner-biceps curl",
+   "group": " biceps"
+ },
+ {
+   "name": "standing lateral stretch",
+   "group": " abdominals"
+ },
+ {
+   "name": "standing leg curl",
+   "group": " hamstrings"
+ },
+ {
+   "name": "standing long jump",
+   "group": " quadriceps"
+ },
+ {
+   "name": "standing low-pulley deltoid raise",
+   "group": " shoulders"
+ },
+ {
+   "name": "standing low-pulley one-arm triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "standing military press",
+   "group": " shoulders"
+ },
+ {
+   "name": "standing olympic plate hand squeeze",
+   "group": " forearms"
+ },
+ {
+   "name": "standing one-arm cable curl",
+   "group": " biceps"
+ },
+ {
+   "name": "standing one-arm dumbbell curl over incline bench",
+   "group": " biceps"
+ },
+ {
+   "name": "standing one-arm dumbbell triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "standing overhead barbell triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "standing palm-in one-arm dumbbell press",
+   "group": " shoulders"
+ },
+ {
+   "name": "standing palms-in dumbbell press",
+   "group": " shoulders"
+ },
+ {
+   "name": "standing palms-up barbell behind the back wrist curl",
+   "group": " forearms"
+ },
+ {
+   "name": "standing pelvic tilt",
+   "group": " lower back"
+ },
+ {
+   "name": "standing rope crunch",
+   "group": " abdominals"
+ },
+ {
+   "name": "standing soleus and achilles stretch",
+   "group": " calves"
+ },
+ {
+   "name": "standing toe touches",
+   "group": " hamstrings"
+ },
+ {
+   "name": "standing towel triceps extension",
+   "group": " triceps"
+ },
+ {
+   "name": "standing two-arm overhead throw",
+   "group": " shoulders"
+ },
+ {
+   "name": "star jump",
+   "group": " quadriceps"
+ },
+ {
+   "name": "step mill",
+   "group": " quadriceps"
+ },
+ {
+   "name": "step-up with knee raise",
+   "group": " glutes"
+ },
+ {
+   "name": "stiff leg barbell good morning",
+   "group": " lower back"
+ },
+ {
+   "name": "stiff-legged barbell deadlift",
+   "group": " hamstrings"
+ },
+ {
+   "name": "stiff-legged dumbbell deadlift",
+   "group": " hamstrings"
+ },
+ {
+   "name": "stomach vacuum",
+   "group": " abdominals"
+ },
+ {
+   "name": "straight bar bench mid rows",
+   "group": " middle back"
+ },
+ {
+   "name": "straight raises on incline bench",
+   "group": " shoulders"
+ },
+ {
+   "name": "straight-arm dumbbell pullover",
+   "group": " chest"
+ },
+ {
+   "name": "straight-arm pulldown",
+   "group": " lats"
+ },
+ {
+   "name": "stride jump crossover",
+   "group": " quadriceps"
+ },
+ {
+   "name": "sumo deadlift",
+   "group": " hamstrings"
+ },
+ {
+   "name": "sumo deadlift with bands",
+   "group": " hamstrings"
+ },
+ {
+   "name": "sumo deadlift with chains",
+   "group": " hamstrings"
+ },
+ {
+   "name": "superman",
+   "group": " lower back"
+ },
+ {
+   "name": "supine chest throw",
+   "group": " triceps"
+ },
+ {
+   "name": "supine one-arm overhead throw",
+   "group": " abdominals"
+ },
+ {
+   "name": "supine two-arm overhead throw",
+   "group": " abdominals"
+ },
+ {
+   "name": "suspended push-up",
+   "group": " chest"
+ },
+ {
+   "name": "suspended reverse crunch",
+   "group": " abdominals"
+ },
+ {
+   "name": "suspended row",
+   "group": " middle back"
+ },
+ {
+   "name": "suspended split squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "t-bar row with handle",
+   "group": " middle back"
+ },
+ {
+   "name": "tate press",
+   "group": " triceps"
+ },
+ {
+   "name": "the straddle",
+   "group": " hamstrings"
+ },
+ {
+   "name": "thigh abductor",
+   "group": " abductors"
+ },
+ {
+   "name": "thigh adductor",
+   "group": " adductors"
+ },
+ {
+   "name": "tire flip",
+   "group": " quadriceps"
+ },
+ {
+   "name": "toe touchers",
+   "group": " abdominals"
+ },
+ {
+   "name": "torso rotation",
+   "group": " abdominals"
+ },
+ {
+   "name": "trail running/walking",
+   "group": " quadriceps"
+ },
+ {
+   "name": "trap bar deadlift",
+   "group": " quadriceps"
+ },
+ {
+   "name": "tricep dumbbell kickback",
+   "group": " triceps"
+ },
+ {
+   "name": "tricep side stretch",
+   "group": " triceps"
+ },
+ {
+   "name": "triceps overhead extension with rope",
+   "group": " triceps"
+ },
+ {
+   "name": "triceps pushdown",
+   "group": " triceps"
+ },
+ {
+   "name": "triceps pushdown - rope attachment",
+   "group": " triceps"
+ },
+ {
+   "name": "triceps pushdown - v-bar attachment",
+   "group": " triceps"
+ },
+ {
+   "name": "triceps stretch",
+   "group": " triceps"
+ },
+ {
+   "name": "tuck crunch",
+   "group": " abdominals"
+ },
+ {
+   "name": "two-arm dumbbell preacher curl",
+   "group": " biceps"
+ },
+ {
+   "name": "two-arm kettlebell clean",
+   "group": " shoulders"
+ },
+ {
+   "name": "two-arm kettlebell jerk",
+   "group": " shoulders"
+ },
+ {
+   "name": "two-arm kettlebell military press",
+   "group": " shoulders"
+ },
+ {
+   "name": "two-arm kettlebell row",
+   "group": " middle back"
+ },
+ {
+   "name": "underhand cable pulldowns",
+   "group": " lats"
+ },
+ {
+   "name": "upper back stretch",
+   "group": " middle back"
+ },
+ {
+   "name": "upper back-leg grab",
+   "group": " hamstrings"
+ },
+ {
+   "name": "upright barbell row",
+   "group": " shoulders"
+ },
+ {
+   "name": "upright cable row",
+   "group": " traps"
+ },
+ {
+   "name": "upright row - with bands",
+   "group": " traps"
+ },
+ {
+   "name": "upward stretch",
+   "group": " shoulders"
+ },
+ {
+   "name": "v-bar pulldown",
+   "group": " lats"
+ },
+ {
+   "name": "v-bar pullup",
+   "group": " lats"
+ },
+ {
+   "name": "vertical swing",
+   "group": " hamstrings"
+ },
+ {
+   "name": "walking",
+   "group": " quadriceps"
+ },
+ {
+   "name": "weighted ball hyperextension",
+   "group": " lower back"
+ },
+ {
+   "name": "weighted ball side bend",
+   "group": " abdominals"
+ },
+ {
+   "name": "weighted bench dip",
+   "group": " triceps"
+ },
+ {
+   "name": "weighted crunches",
+   "group": " abdominals"
+ },
+ {
+   "name": "weighted jump squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "weighted pull ups",
+   "group": " lats"
+ },
+ {
+   "name": "weighted sissy squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "weighted sit-ups - with bands",
+   "group": " abdominals"
+ },
+ {
+   "name": "weighted squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "wide stance barbell squat",
+   "group": " quadriceps"
+ },
+ {
+   "name": "wide stance stiff legs",
+   "group": " hamstrings"
+ },
+ {
+   "name": "wide-grip barbell bench press",
+   "group": " chest"
+ },
+ {
+   "name": "wide-grip decline barbell bench press",
+   "group": " chest"
+ },
+ {
+   "name": "wide-grip decline barbell pullover",
+   "group": " chest"
+ },
+ {
+   "name": "wide-grip lat pulldown",
+   "group": " lats"
+ },
+ {
+   "name": "wide-grip pulldown behind the neck",
+   "group": " lats"
+ },
+ {
+   "name": "wide-grip rear pull-up",
+   "group": " lats"
+ },
+ {
+   "name": "wide-grip standing barbell curl",
+   "group": " biceps"
+ },
+ {
+   "name": "wind sprints",
+   "group": " abdominals"
+ },
+ {
+   "name": "windmills",
+   "group": " abductors"
+ },
+ {
+   "name": "world's greatest stretch",
+   "group": " hamstrings"
+ },
+ {
+   "name": "wrist circles",
+   "group": " forearms"
+ },
+ {
+   "name": "wrist roller",
+   "group": " forearms"
+ },
+ {
+   "name": "wrist rotations with straight bar",
+   "group": " forearms"
+ },
+ {
+   "name": "yoke walk",
+   "group": " quadriceps"
+ },
+ {
+   "name": "zercher squats",
+   "group": " quadriceps"
+ },
+ {
+   "name": "zottman curl",
+   "group": " biceps"
+ },
+ {
+   "name": "zottman preacher curl",
+   "group": " biceps"
+ }
+]
