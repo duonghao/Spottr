@@ -36,41 +36,66 @@ struct SetRow: View {
     }
     
     var body: some View {
-        GridRow {
-            Text("Set")
-                .hidden()
-                .overlay {
-                    Text(setType)
+        HStack {
+            column(content: nameView)
+            column(content: lastSetView)
+            column(content: weightView)
+            column(content: repsView)
+            
+            GeometryReader { geo in
+                Button {
+                    toggleSet(set: set)
+                } label: {
+                    Label("Complete Set", systemImage: "checkmark")
+                        .labelStyle(.iconOnly)
+                        .frame(width: geo.size.width, height: geo.size.height)
                 }
-                .onTapGesture {
-                    updateSetType()
-                }
-            
-            Text(lastSetString)
-                .font(.headline)
-            
-            TextField(lastSetWeight, value: $weight, format: .number)
-                .multilineTextAlignment(.center)
-                .keyboardType(.decimalPad)
-                .onChange(of: weight, perform: updateWeight)
-            
-            TextField(lastSetReps, value: $reps, format: .number)
-                .multilineTextAlignment(.center)
-                .keyboardType(.numberPad)
-                .onChange(of: reps, perform: updateReps)
-            
-            Button {
-                toggleSet(set: set)
-            } label: {
-                Label("Complete Set", systemImage: "checkmark")
-                    .labelStyle(.iconOnly)
+                .disabled(buttonDisabled)
             }
-            .buttonStyle(.plain)
-            .disabled(buttonDisabled)
         }
+        .padding(.vertical)
         .padding(.vertical)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(set.isDone ? .green.opacity(0.2) : .clear)
+        .onDelete {
+            remove(set: set, from: exercise)
+        }
+    }
+    
+    func column(content: () -> some View) -> some View {
+        GeometryReaderView {
+            content()
+        }
+    }
+    
+    func nameView() -> some View {
+        Text("Set")
+            .hidden()
+            .overlay {
+                Text(setType)
+            }
+            .onTapGesture {
+                updateSetType()
+            }
+    }
+    
+    func lastSetView() -> some View {
+        Text(lastSetString)
+            .font(.headline)
+    }
+    
+    func weightView() -> some View {
+        TextField(lastSetWeight, value: $weight, format: .number)
+            .multilineTextAlignment(.center)
+            .keyboardType(.decimalPad)
+            .onChange(of: weight, perform: updateWeight)
+    }
+    
+    func repsView() -> some View {
+        TextField(lastSetReps, value: $reps, format: .number)
+            .multilineTextAlignment(.center)
+            .keyboardType(.numberPad)
+            .onChange(of: reps, perform: updateReps)
     }
     
     func updateWeight(_ weight: Double?) {
@@ -166,16 +191,24 @@ struct SetRow: View {
         save()
     }
     
+    func remove(set: ExerciseSet, from exercise: Exercise) {
+        exercise.removeFromSets(set)
+        moc.delete(set)
+        save()
+    }
+    
     func save() {
         PersistenceController.shared.save()
     }
 }
 
 struct SetRow_Previews: PreviewProvider {
-
+    
     static var previews: some View {
-        Grid {
-            SetRow(exercise: Exercise.example, set: ExerciseSet.example, order: 1, lastSet: ExerciseSet.example)
+        LazyVStack(spacing: 0) {
+            ForEach(1..<5, id: \.self) { _ in
+                SetRow(exercise: Exercise.example, set: ExerciseSet.example, order: 1, lastSet: ExerciseSet.example)
+            }
         }
     }
 }

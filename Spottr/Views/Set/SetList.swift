@@ -7,6 +7,61 @@
 
 import SwiftUI
 
+struct EqualWidthHStack: Layout {
+    
+    func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
+        guard !subviews.isEmpty else { return .zero }
+
+        let maxSize: CGSize = maxSize(subviews: subviews)
+        let spacing: [CGFloat] = spacing(subviews: subviews)
+        let totalSpacing = spacing.reduce(0) { $0 + $1 }
+
+        return CGSize(
+            width: maxSize.width * CGFloat(subviews.count) + totalSpacing,
+            height: maxSize.height)
+    }
+    
+    func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
+        guard !subviews.isEmpty else { return }
+
+        let maxSize = maxSize(subviews: subviews)
+        let spacing = spacing(subviews: subviews)
+
+        let placementProposal = ProposedViewSize(width: maxSize.width, height: maxSize.height)
+        var nextX = bounds.minX + maxSize.width / 2
+
+        for index in subviews.indices {
+            subviews[index].place(
+                at: CGPoint(x: nextX, y: bounds.midY),
+                anchor: .center,
+                proposal: placementProposal)
+            nextX += maxSize.width + spacing[index]
+        }
+    }
+    
+    private func maxSize(subviews: Subviews) -> CGSize {
+        let subViewSizes = subviews.map({$0.sizeThatFits(.unspecified)})
+        let maxSize: CGSize = subViewSizes.reduce(.zero) { maxSize, currentSize in
+            return CGSize(
+                width: max(maxSize.width, currentSize.width),
+                height: max(maxSize.height, currentSize.height)
+            )
+        }
+        
+        return maxSize
+    }
+    
+    private func spacing(subviews: Subviews) -> [CGFloat] {
+        subviews.indices.map { index in
+            guard index < subviews.count - 1 else { return 0 }
+            return subviews[index].spacing.distance(
+                to: subviews[index + 1].spacing,
+                along: .horizontal)
+        }
+    }
+    
+}
+
 struct SetList: View {
     
     @Environment(\.managedObjectContext) var moc
@@ -18,33 +73,26 @@ struct SetList: View {
         .init(title: "reps"),
         .init(title: "done")
     ]
-    private let layout: [GridItem] = [
-        .init(.flexible()),
-        .init(.flexible()),
-        .init(.flexible()),
-        .init(.flexible()),
-        .init(.flexible())
-    ]
 
     var body: some View {
-        Grid(horizontalSpacing: 0, verticalSpacing: 0) {
-            GridRow {
+        LazyVStack(spacing: 0) {
+            HStack {
                 ForEach(headers) { header in
-                    Text(header.title.capitalized)
-                        .font(.headline)
+                    GeometryReaderView {
+                        Text(header.title.capitalized)
+                            .font(.headline)
+                    }
                 }
             }
-            .padding(.bottom)
-            .frame(maxWidth: .infinity)
+            .padding(.vertical)
             
             Divider()
             
             ForEach(Array(exercise.setsArray.enumerated()), id: \.offset) { index, exerciseSet in
                 SetRow(exercise: exercise, set: exerciseSet, order: index + 1, lastSet: priorSet(from: index))
-                Divider()
             }
-            
-            GridRow {
+
+            HStack {
                 Button {
                     withAnimation {
                         addSet()
@@ -57,7 +105,6 @@ struct SetList: View {
                         .foregroundColor(.white)
                 }
             }
-            .gridCellColumns(headers.count)
         }
         .padding(.top)
         .background(.black.opacity(0.1))
@@ -96,11 +143,6 @@ struct SetList: View {
 
 struct SetList_Previews: PreviewProvider {
     static var previews: some View {
-        List {
-            SetList(exercise: Exercise.example)
-                .listRowInsets(EdgeInsets())
-                .listRowSeparator(.hidden)
-        }
-        .listStyle(.plain)
+        SetList(exercise: Exercise.example)
     }
 }

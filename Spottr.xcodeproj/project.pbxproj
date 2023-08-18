@@ -47,6 +47,7 @@
 		3FE374462A87985B0026BCC6 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE374452A87985B0026BCC6 /* HeaderView.swift */; };
 		3FE3745B2A879FFF0026BCC6 /* TemplatesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3745A2A879FFF0026BCC6 /* TemplatesListView.swift */; };
 		3FF21ECB2A8906F900F81F94 /* FitnessTrackingModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FF21EC92A8906F900F81F94 /* FitnessTrackingModel.xcdatamodeld */; };
+		3FFD5BFA2A8F985500DD5513 /* SwipeToDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD5BF92A8F985500DD5513 /* SwipeToDelete.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		3FE374452A87985B0026BCC6 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		3FE3745A2A879FFF0026BCC6 /* TemplatesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesListView.swift; sourceTree = "<group>"; };
 		3FF21ECA2A8906F900F81F94 /* FitnessTrackingModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FitnessTrackingModel.xcdatamodel; sourceTree = "<group>"; };
+		3FFD5BF92A8F985500DD5513 /* SwipeToDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeToDelete.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				3FC41A482A8CC48000A6C038 /* HeaderItem.swift */,
 				3FC41A4C2A8CDC9900A6C038 /* AddButton.swift */,
 				3FC41A542A8E396700A6C038 /* LabelView.swift */,
+				3FFD5BF92A8F985500DD5513 /* SwipeToDelete.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				3FE3741F2A850B010026BCC6 /* ProgressTabView.swift in Sources */,
 				3FE374232A85EF350026BCC6 /* ExerciseType.swift in Sources */,
 				3FE374072A8230850026BCC6 /* CalendarView.swift in Sources */,
+				3FFD5BFA2A8F985500DD5513 /* SwipeToDelete.swift in Sources */,
 				3FC41A302A8A4C5800A6C038 /* LinearTimer.swift in Sources */,
 				3F4C42EA2A7E646A00CFC7C4 /* DoneView.swift in Sources */,
 				3F0E3A6C2A668BD1003AE994 /* WorkoutNavView.swift in Sources */,
