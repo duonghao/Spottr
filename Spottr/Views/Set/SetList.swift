@@ -27,7 +27,7 @@ struct SetList: View {
     ]
 
     var body: some View {
-        Grid {
+        Grid(horizontalSpacing: 0, verticalSpacing: 0) {
             GridRow {
                 ForEach(headers) { header in
                     Text(header.title.capitalized)
@@ -37,15 +37,8 @@ struct SetList: View {
             .frame(maxWidth: .infinity)
             
             ForEach(Array(exercise.setsArray.enumerated()), id: \.offset) { index, exerciseSet in
-                    GridRow {
-                    Text(index + 1, format: .number)
-                    Text("60x5")
-                    Text("60")
-                    Text("5")
-                    Image(systemName: "checkmark")
-                }
+                SetRow(exercise: exercise, set: exerciseSet, order: index + 1, lastSet: priorSet(from: index))
             }
-            .padding(.vertical)
             
             GridRow {
                 Button {
@@ -64,6 +57,10 @@ struct SetList: View {
         }
         .padding(.top)
         .background(.black.opacity(0.1))
+    }
+    
+    func priorSet(from index: Int) -> ExerciseSet? {
+        index == 0 ? priorExercise?.setsArray.last : exercise.setsArray[index - 1]
     }
     
     var priorExercise: Exercise? {

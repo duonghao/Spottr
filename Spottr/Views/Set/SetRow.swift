@@ -12,7 +12,7 @@ struct SetRow: View {
     @Environment(\.managedObjectContext) var moc
     @EnvironmentObject var workout: Workout
     @ObservedObject var set: ExerciseSet
-    @State var setType: String
+    @State private var setType: String
     @State private var weight: Double?
     @State private var reps: Int?
     
@@ -36,45 +36,40 @@ struct SetRow: View {
     }
     
     var body: some View {
-        HStack {
-            GeometryReaderView {
-                Text("Set")
-                    .hidden()
-                    .overlay {
-                        Text(setType)
-                    }
-                    .onTapGesture {
-                        updateSetType()
-                    }
-            }
-            GeometryReaderView {
-                Text(lastSetString)
-                    .font(.headline)
-                    .fixedSize()
-            }
-            GeometryReaderView {
-                TextField(lastSetWeight, value: $weight, format: .number)
-                    .multilineTextAlignment(.center)
-                    .keyboardType(.decimalPad)
-                    .onChange(of: weight, perform: updateWeight)
-            }
-            GeometryReaderView {
-                TextField(lastSetReps, value: $reps, format: .number)
-                    .multilineTextAlignment(.center)
-                    .keyboardType(.numberPad)
-                    .onChange(of: reps, perform: updateReps)
-            }
-            GeometryReaderView {
-                Button {
-                    toggleSet(set: set)
-                } label: {
-                    Label("Complete Set", systemImage: "checkmark")
-                        .labelStyle(.iconOnly)
+        GridRow {
+            Text("Set")
+                .hidden()
+                .overlay {
+                    Text(setType)
                 }
-                .buttonStyle(.plain)
-                .disabled(buttonDisabled)
+                .onTapGesture {
+                    updateSetType()
+                }
+            
+            Text(lastSetString)
+                .font(.headline)
+            
+            TextField(lastSetWeight, value: $weight, format: .number)
+                .multilineTextAlignment(.center)
+                .keyboardType(.decimalPad)
+                .onChange(of: weight, perform: updateWeight)
+            
+            TextField(lastSetReps, value: $reps, format: .number)
+                .multilineTextAlignment(.center)
+                .keyboardType(.numberPad)
+                .onChange(of: reps, perform: updateReps)
+            
+            Button {
+                toggleSet(set: set)
+            } label: {
+                Label("Complete Set", systemImage: "checkmark")
+                    .labelStyle(.iconOnly)
             }
+            .buttonStyle(.plain)
+            .disabled(buttonDisabled)
         }
+        .padding(.vertical)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(set.isDone ? .green.opacity(0.2) : .clear)
     }
     
@@ -179,9 +174,8 @@ struct SetRow: View {
 struct SetRow_Previews: PreviewProvider {
 
     static var previews: some View {
-        List(1..<3, id: \.self) { _ in
+        Grid {
             SetRow(exercise: Exercise.example, set: ExerciseSet.example, order: 1, lastSet: ExerciseSet.example)
-                .listRowInsets(EdgeInsets())
         }
     }
 }
