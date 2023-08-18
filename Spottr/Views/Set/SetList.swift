@@ -34,10 +34,14 @@ struct SetList: View {
                         .font(.headline)
                 }
             }
+            .padding(.bottom)
             .frame(maxWidth: .infinity)
+            
+            Divider()
             
             ForEach(Array(exercise.setsArray.enumerated()), id: \.offset) { index, exerciseSet in
                 SetRow(exercise: exercise, set: exerciseSet, order: index + 1, lastSet: priorSet(from: index))
+                Divider()
             }
             
             GridRow {
@@ -53,7 +57,7 @@ struct SetList: View {
                         .foregroundColor(.white)
                 }
             }
-            .gridCellColumns(5)
+            .gridCellColumns(headers.count)
         }
         .padding(.top)
         .background(.black.opacity(0.1))
