@@ -58,16 +58,7 @@ struct WorkoutView: View {
                 if (hasStarted && !hasFinished) {
                     CurrentExercisePreviewView(workout: workout).transition(.move(edge: .bottom))
                 }
-                else if (!hasStarted) {
-                    Button(action: startWorkout) {
-                        Text("Start")
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(.thickMaterial)
-                    }
-                }
             }
-            
             Spacer()
         }
         .padding(.horizontal)
@@ -80,13 +71,26 @@ struct WorkoutView: View {
             SelectExerciseView(selectedExercises: $selectedExercises)
                 .onChange(of: selectedExercises, perform: updateWorkout)
         }
+        .navigationTitle(workout.uName)
         .toolbar {
-            ToolbarItem(placement: .principal) { title() }
             ToolbarItem(placement: .navigationBarTrailing) {
-                if (!hasFinished) {
-                    Button("Finish", role: .destructive, action: finishWorkout)
-                        .disabled(!hasStarted)
+                EditButton()
+            }
+            ToolbarItem(placement: .bottomBar) {
+                HStack {
+                    Button("Notes") {}
+                    Spacer()
+                    if (!hasStarted) {
+                        Button(action: startWorkout) {
+                            Text("Start")
+                        }
+                    }
+                    else if (!hasFinished) {
+                        Button("Finish", role: .destructive, action: finishWorkout)
+                            .disabled(!hasStarted)
+                    }
                 }
+                Divider()
             }
         }
         .onReceive(workout.objectWillChange) { newValue in
@@ -160,15 +164,6 @@ struct WorkoutView: View {
                 .foregroundColor(.white)
                 .clipShape(RoundedRectangle(cornerRadius: .defaultCornerRadius))
         }
-    }
-    
-    var buttonTitle: String {
-        workout.startDate == nil ? "Start" : "Resume"
-    }
-    
-    func title() -> some View {
-        Text(workout.uName)
-            .bold()
     }
     
     func addExercise(exerciseType: ExerciseType) {
