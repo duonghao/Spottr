@@ -97,7 +97,7 @@ struct WorkoutView: View {
                             Text("Start")
                         }
                     }
-                    else if (!hasFinished) {
+                    else {
                         Button("Finish", role: .destructive, action: finishWorkout)
                             .disabled(!hasStarted)
                     }
