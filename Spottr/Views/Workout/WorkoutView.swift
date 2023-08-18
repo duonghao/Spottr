@@ -23,13 +23,14 @@ struct WorkoutView: View {
     @State private var showingFinished = false
     @State private var hasStarted: Bool
     @State private var hasFinished: Bool
+    @State private var dragging: Exercise?
     
     init(workout: Workout) {
         self.workout = workout
         _hasStarted = State(initialValue: workout.hasStarted)
         _hasFinished = State(initialValue: workout.hasFinished)
         _datePicked = State(initialValue: workout.uEndDate)
-        _selectedExercises = State(initialValue: getInitialSelectedExercises(workout: workout))
+        _selectedExercises = State(initialValue: getSelected(workout: workout))
     }
     
     var body: some View {
@@ -47,10 +48,21 @@ struct WorkoutView: View {
                         ExerciseRow(exercise: exercise) {
                             selectedExercise = exercise
                         }
+                        .draggable(exercise.uid) {
+                            dragPreview(exercise: exercise)
+                        }
+                        .dropDestination(for: String.self) { _, _ in
+                            dragging = nil
+                            return false
+                        } isTargeted: { status in
+                            if let dragging, status, dragging != exercise {
+                                move(from: dragging, to: exercise, in: workout)
+                            }
+                        }
                     }
-
                     addExerciseButton()
                 }
+                .animation(.spring(), value: workout.exercisesArray)
             }
             .scrollContentBackground(.hidden)
             .scrollDismissesKeyboard(.immediately)
@@ -102,12 +114,40 @@ struct WorkoutView: View {
         }
     }
     
-    func getInitialSelectedExercises(workout: Workout) -> [ExerciseType] {
-        var selectedExercises: [ExerciseType] = []
-        for exercise in workout.exercisesArray {
-            selectedExercises.append(exercise.exerciseType)
+    @ViewBuilder func addExerciseButton() -> some View {
+        Button {
+            showingSelectExercise = true
+        } label: {
+            Label("New Exercise", systemImage: "plus")
+                .frame(maxWidth: .infinity)
+                .padding()
+                .background(Color.accentColor)
+                .foregroundColor(.white)
+                .clipShape(RoundedRectangle(cornerRadius: .defaultCornerRadius))
         }
-        return selectedExercises
+    }
+    
+    @ViewBuilder func dragPreview(exercise: Exercise) -> some View {
+        EmptyView()
+            .frame(width: 1, height: 1)
+            .onAppear {
+                dragging = exercise
+            }
+    }
+    
+    func move(from source: Exercise, to destination: Exercise, in workout: Workout) {
+        guard
+            let sourceIndex = workout.exercisesArray.firstIndex(of: source),
+            let destinationIndex = workout.exercisesArray.firstIndex(of: destination)
+        else {
+            return
+        }
+        workout.removeFromExercises(at: sourceIndex)
+        workout.insertIntoExercises(source, at: destinationIndex)
+    }
+    
+    func getSelected(workout: Workout) -> [ExerciseType] {
+        workout.exercisesArray.map({ $0.exerciseType })
     }
     
     func finishWorkout() {
@@ -121,7 +161,6 @@ struct WorkoutView: View {
     
     func startWorkout() {
         if workout.isTemplate {
-            // Make a new template
             let newTemplate = workout.copyEntireObjectGraph(context: moc) as? Workout
             newTemplate?.id = UUID()
         }
@@ -153,19 +192,6 @@ struct WorkoutView: View {
         save()
     }
     
-    func addExerciseButton() -> some View {
-        Button {
-            showingSelectExercise = true
-        } label: {
-            Label("New Exercise", systemImage: "plus")
-                .frame(maxWidth: .infinity)
-                .padding()
-                .background(Color.accentColor)
-                .foregroundColor(.white)
-                .clipShape(RoundedRectangle(cornerRadius: .defaultCornerRadius))
-        }
-    }
-    
     func addExercise(exerciseType: ExerciseType) {
         let newExercise = Exercise(context: moc)
         newExercise.id = UUID()
@@ -173,11 +199,7 @@ struct WorkoutView: View {
         workout.addToExercises(newExercise)
         save()
     }
-    
-    func updateExercise(exercise: Exercise, name: String) {
-        exercise.name = name
-        save()
-    }
+
     
     func deleteExercise(exercise: Exercise) {
         workout.removeFromExercises(exercise)
@@ -190,15 +212,6 @@ struct WorkoutView: View {
             let exercise = workout.exercisesArray[index]
             workout.removeFromExercises(exercise)
             moc.delete(exercise)
-        }
-        save()
-    }
-    
-    func moveExercise(from offsets: IndexSet, to: Int) {
-        for index in offsets {
-            let exercise = workout.exercisesArray[index]
-            workout.removeFromExercises(exercise)
-            workout.insertIntoExercises(exercise, at: to == 0 ? to : to - 1)
         }
         save()
     }

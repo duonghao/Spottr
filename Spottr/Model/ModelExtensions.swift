@@ -105,6 +105,11 @@ extension Workout {
 }
 
 extension Exercise {
+    
+    var uid: String {
+        id?.uuidString ?? UUID().uuidString
+    }
+    
     var uName: String {
         name ?? ""
     }

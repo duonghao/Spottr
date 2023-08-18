@@ -18,19 +18,7 @@ struct ExerciseRow: View {
         DisclosureGroup(isExpanded: $isExpanded) {
             SetList(exercise: exercise)
         } label: {
-            HStack {
-                VStack(alignment: .leading) {
-                    Text(exercise.uName.capitalized)
-                        .font(.headline)
-                        .onTapGesture {
-                            onTap()
-                        }
-                    if !isExpanded {
-                        Text("Sets: \(String(exercise.setsArray.count))")
-                            .foregroundColor(.secondary)
-                    }
-                }
-            }
+            label()
         }
         .disclosureGroupStyle(CustomDisclosureGroupStyle())
         .background(.thickMaterial)
@@ -38,25 +26,21 @@ struct ExerciseRow: View {
         .clipShape(RoundedRectangle(cornerRadius: .defaultCornerRadius))
     }
     
-    func addSet() {
-        let newSet = ExerciseSet(context: moc)
-        newSet.id = UUID()
-        exercise.addToSets(newSet)
-        
-        save()
-    }
-    
-    func deleteSet(at offsets: IndexSet) {
-        for index in offsets {
-            let set = exercise.setsArray[index]
-            exercise.removeFromSets(set)
-            moc.delete(set)
+    @ViewBuilder func label() -> some View {
+        HStack {
+            VStack(alignment: .leading) {
+                Text(exercise.uName.capitalized)
+                    .font(.headline)
+                    .onTapGesture {
+                        onTap()
+                    }
+                if !isExpanded {
+                    Text("Sets: \(String(exercise.setsArray.count))")
+                        .foregroundColor(.secondary)
+                }
+            }
+            Spacer()
         }
-        save()
-    }
-    
-    func save() {
-        PersistenceController.shared.save()
     }
 }
 
@@ -66,7 +50,6 @@ struct ExerciseRow_Preview: PreviewProvider {
             ForEach(1..<5, id: \.self) { _ in
                 ExerciseRow(exercise: Exercise.example, onTap: {})
             }
-           
             Spacer()
         }
         .padding()
