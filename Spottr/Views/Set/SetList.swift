@@ -43,7 +43,7 @@ struct SetList: View {
             GridRow {
                 Button {
                     withAnimation {
-//                        addSet()
+                        addSet()
                     }
                 } label: {
                     Label("New set", systemImage: "plus")
@@ -57,6 +57,15 @@ struct SetList: View {
         }
         .padding(.top)
         .background(.black.opacity(0.1))
+    }
+    
+    func addSet() {
+        let newSet = ExerciseSet(context: moc)
+        newSet.id = UUID()
+        
+        exercise.addToSets(newSet)
+        
+        save()
     }
     
     func priorSet(from index: Int) -> ExerciseSet? {
