@@ -107,7 +107,6 @@ struct SetList: View {
             }
         }
         .padding(.top)
-        .background(.black.opacity(0.1))
     }
     
     func addSet() {

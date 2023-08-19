@@ -23,12 +23,14 @@ struct WorkoutView: View {
     @State private var showingFinished = false
     @State private var hasStarted: Bool
     @State private var hasFinished: Bool
+    @State private var allSetsFinished: Bool
     @State private var dragging: Exercise?
     
     init(workout: Workout) {
         self.workout = workout
         _hasStarted = State(initialValue: workout.hasStarted)
         _hasFinished = State(initialValue: workout.hasFinished)
+        _allSetsFinished = State(initialValue: workout.allSetsFinished)
         _datePicked = State(initialValue: workout.uEndDate)
         _selectedExercises = State(initialValue: getSelected(workout: workout))
     }
@@ -73,7 +75,6 @@ struct WorkoutView: View {
             }
             Spacer()
         }
-        .padding(.horizontal)
         .environmentObject(workout)
         .navigationBarTitleDisplayMode(.inline)
         .sheet(isPresented: $showingFinished) {
@@ -97,7 +98,7 @@ struct WorkoutView: View {
                             Text("Start")
                         }
                     }
-                    else {
+                    else if (!hasFinished) {
                         Button("Finish", role: .destructive, action: finishWorkout)
                             .disabled(!hasStarted)
                     }
@@ -108,7 +109,7 @@ struct WorkoutView: View {
         .onReceive(workout.objectWillChange) { newValue in
             if (workout.hasStarted && workout.allSetsFinished) {
                 withAnimation(.easeOut) {
-                    hasFinished = true
+                    allSetsFinished = true
                 }
             }
         }
@@ -151,6 +152,7 @@ struct WorkoutView: View {
     }
     
     func finishWorkout() {
+        hasFinished = true
         showingFinished = true
     }
     

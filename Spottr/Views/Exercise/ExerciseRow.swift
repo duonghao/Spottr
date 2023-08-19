@@ -12,6 +12,7 @@ struct ExerciseRow: View {
     @Environment(\.managedObjectContext) var moc
     @ObservedObject var exercise: Exercise
     @State private var isExpanded: Bool = false
+
     var onTap: () -> Void
     
     var body: some View {
@@ -20,7 +21,7 @@ struct ExerciseRow: View {
         } label: {
             label()
         }
-        .disclosureGroupStyle(CustomDisclosureGroupStyle())
+        .disclosureGroupStyle(CustomDisclosureGroupStyle(onDelete: {}))
         .background(.thickMaterial)
         .background(exercise.isDone ? .green : .clear)
         .clipShape(RoundedRectangle(cornerRadius: .defaultCornerRadius))
@@ -52,6 +53,5 @@ struct ExerciseRow_Preview: PreviewProvider {
             }
             Spacer()
         }
-        .padding()
     }
 }
