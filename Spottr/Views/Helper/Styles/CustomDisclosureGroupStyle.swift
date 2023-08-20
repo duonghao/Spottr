@@ -23,8 +23,9 @@ struct CustomDisclosureGroupStyle: DisclosureGroupStyle {
                 } label: {
                     Label("Options", systemImage: "ellipsis")
                         .labelStyle(.iconOnly)
-                        .contentShape(Circle())
+                        .padding()
                 }
+                .contentShape(Circle())
             }
             .padding()
             .contentShape(Rectangle())
