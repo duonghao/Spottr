@@ -41,63 +41,19 @@ extension DateFormatter {
     }()
 }
 
-struct EquatableCalendarView<DateView: View, Value: Equatable>: View, Equatable {
-    static func == (
-        lhs: EquatableCalendarView<DateView, Value>,
-        rhs: EquatableCalendarView<DateView, Value>
-    ) -> Bool {
-        lhs.interval == rhs.interval && lhs.value == rhs.value && lhs.showHeaders == rhs.showHeaders
-    }
-    
-    let interval: DateInterval
-    let value: Value
-    let showHeaders: Bool
-    let onHeaderAppear: (Date) -> Void
-    let content: (Date) -> DateView
-    
-    init(
-        interval: DateInterval,
-        value: Value,
-        showHeaders: Bool = true,
-        onHeaderAppear: @escaping (Date) -> Void = { _ in },
-        @ViewBuilder content: @escaping (Date) -> DateView
-    ) {
-        self.interval = interval
-        self.value = value
-        self.showHeaders = showHeaders
-        self.onHeaderAppear = onHeaderAppear
-        self.content = content
-    }
-    
-    var body: some View {
-        CalendarView(
-            interval: interval,
-            showHeaders: showHeaders,
-            onHeaderAppear: onHeaderAppear
-        ) { date in
-            content(date)
-        }
-    }
-}
-
 struct CalendarView<DateView: View>: View {
-    let interval: DateInterval
+    
+    @Binding var month: Date
     let showHeaders: Bool
     let onHeaderAppear: (Date) -> Void
     let content: (Date) -> DateView
     private let daysInWeek = 7
-    private let weekdayDateFormatter = DateFormatter()
 
     @Environment(\.sizeCategory) private var contentSize
     @Environment(\.calendar) private var calendar
     @State private var months: [Date] = []
     @State private var days: [Date: [Date]] = [:]
-
-    private var columns: [GridItem] {
-        let spacing: CGFloat = contentSize.isAccessibilityCategory ? 2 : 8
-        return Array(repeating: GridItem(spacing: spacing), count: 7)
-    }
-
+    
     var body: some View {
         LazyVGrid(columns: columns) {
             ForEach(months, id: \.self) { month in
@@ -119,24 +75,34 @@ struct CalendarView<DateView: View>: View {
                 }
             }
         }
-        .onAppear {
-            months = calendar.generateDates(
-                inside: interval,
-                matching: DateComponents(day: 1, hour: 0, minute: 0, second: 0)
-            )
+        .onAppear(perform: generateDates)
+        .onChange(of: month) { _ in
+            generateDates()
+        }
+    }
+    
+    private var columns: [GridItem] {
+        let spacing: CGFloat = contentSize.isAccessibilityCategory ? 2 : 8
+        return Array(repeating: GridItem(spacing: spacing), count: 7)
+    }
+    
+    private func generateDates() {
+        months = calendar.generateDates(
+            inside: DateInterval(start: month, end: month),
+            matching: DateComponents(day: 1, hour: 0, minute: 0, second: 0)
+        )
+        
+        days = months.reduce(into: [:]) { current, month in
+            guard
+                let monthInterval = calendar.dateInterval(of: .month, for: month),
+                let monthFirstWeek = calendar.dateInterval(of: .weekOfMonth, for: monthInterval.start),
+                let monthLastWeek = calendar.dateInterval(of: .weekOfMonth, for: monthInterval.end)
+            else { return }
             
-            days = months.reduce(into: [:]) { current, month in
-                guard
-                    let monthInterval = calendar.dateInterval(of: .month, for: month),
-                    let monthFirstWeek = calendar.dateInterval(of: .weekOfMonth, for: monthInterval.start),
-                    let monthLastWeek = calendar.dateInterval(of: .weekOfMonth, for: monthInterval.end)
-                else { return }
-                
-                current[month] = calendar.generateDates(
-                    inside: DateInterval(start: monthFirstWeek.start, end: monthLastWeek.end),
-                    matching: DateComponents(hour: 0, minute: 0, second: 0)
-                )
-            }
+            current[month] = calendar.generateDates(
+                inside: DateInterval(start: monthFirstWeek.start, end: monthLastWeek.end),
+                matching: DateComponents(hour: 0, minute: 0, second: 0)
+            )
         }
     }
     

@@ -11,6 +11,7 @@ struct HistoryTabView: View {
     
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: [], predicate: NSPredicate(format: "endDate != nil")) var completedWorkouts: FetchedResults<Workout>
+    @State var month: Date = Date.now
     
     var body: some View {
         if completedWorkouts.isEmpty {
@@ -22,8 +23,9 @@ struct HistoryTabView: View {
             .foregroundColor(.secondary)
         } else {
             VStack {
+                header
                 CalendarView(
-                    interval: DateInterval(start: Date.now, end: Calendar.current.date(byAdding: .day, value: 2, to: Date.now)!),
+                    month: $month,
                     showHeaders: false,
                     onHeaderAppear: { _ in }) { date in
                         DateMarker(
@@ -46,6 +48,43 @@ struct HistoryTabView: View {
             }
             .padding(.horizontal)
         }
+    }
+    
+    var header: some View {
+        let dateFormatterGet = DateFormatter()
+        dateFormatterGet.dateFormat = "MMMM"
+
+        return HStack {
+            previousMonthAdjuster
+            Spacer()
+            Text(dateFormatterGet.string(from: month))
+            Spacer()
+            nextMonthAdjuster
+        }
+    }
+    
+    func monthAdjuster(by: Int) -> some View {
+        let title = (by <= 0 ? "Previous" : "Next") + "Month"
+        let symbol = "arrow." + (by <= 0 ? "left" : "right")
+        
+        return Button {
+            month = monthAdjuster(by: by, on: month)
+        } label: {
+            Label(title, systemImage: symbol)
+                .labelStyle(.iconOnly)
+        }
+    }
+    
+    var previousMonthAdjuster: some View {
+        monthAdjuster(by: -1)
+    }
+    
+    var nextMonthAdjuster: some View {
+        monthAdjuster(by: 1)
+    }
+    
+    func monthAdjuster(by month: Int, on date: Date) -> Date {
+        Calendar.current.date(byAdding: .month, value: month, to: date)!
     }
     
     func completedWorkoutsByEndDate(_ endDate: Date) -> [Workout] {
