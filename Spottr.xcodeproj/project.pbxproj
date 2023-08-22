@@ -51,6 +51,7 @@
 		3FFD5C0D2A94A6EE00DD5513 /* AddTemplateSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD5C0C2A94A6EE00DD5513 /* AddTemplateSheet.swift */; };
 		3FFD5C0F2A94B8E200DD5513 /* AddFolderSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD5C0E2A94B8E200DD5513 /* AddFolderSheet.swift */; };
 		3FFD5C112A94DA8A00DD5513 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD5C102A94DA8A00DD5513 /* TestView.swift */; };
+		3FFD5C132A94E62D00DD5513 /* AddWorkoutSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD5C122A94E62D00DD5513 /* AddWorkoutSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		3FFD5C0C2A94A6EE00DD5513 /* AddTemplateSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTemplateSheet.swift; sourceTree = "<group>"; };
 		3FFD5C0E2A94B8E200DD5513 /* AddFolderSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolderSheet.swift; sourceTree = "<group>"; };
 		3FFD5C102A94DA8A00DD5513 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		3FFD5C122A94E62D00DD5513 /* AddWorkoutSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				3FC41A4A2A8CC6D900A6C038 /* CurrentExercisePreviewView.swift */,
 				3FFD5C0C2A94A6EE00DD5513 /* AddTemplateSheet.swift */,
 				3FFD5C0E2A94B8E200DD5513 /* AddFolderSheet.swift */,
+				3FFD5C122A94E62D00DD5513 /* AddWorkoutSheet.swift */,
 			);
 			path = Workout;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				3FE374232A85EF350026BCC6 /* ExerciseType.swift in Sources */,
 				3FFD5C0F2A94B8E200DD5513 /* AddFolderSheet.swift in Sources */,
 				3FE374072A8230850026BCC6 /* CalendarView.swift in Sources */,
+				3FFD5C132A94E62D00DD5513 /* AddWorkoutSheet.swift in Sources */,
 				3FFD5BFA2A8F985500DD5513 /* SwipeToDelete.swift in Sources */,
 				3FC41A302A8A4C5800A6C038 /* LinearTimer.swift in Sources */,
 				3F4C42EA2A7E646A00CFC7C4 /* DoneView.swift in Sources */,
