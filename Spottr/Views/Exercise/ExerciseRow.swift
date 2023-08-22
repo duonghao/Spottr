@@ -12,8 +12,10 @@ struct ExerciseRow: View {
     @Environment(\.managedObjectContext) var moc
     @ObservedObject var exercise: Exercise
     @State private var isExpanded: Bool = false
-
-    var onTap: () -> Void
+    let onTap: () -> Void
+    let onDelete: () -> Void
+    
+    // MARK: - Views
     
     var body: some View {
         DisclosureGroup(isExpanded: $isExpanded) {
@@ -21,13 +23,14 @@ struct ExerciseRow: View {
         } label: {
             label()
         }
-        .disclosureGroupStyle(CustomDisclosureGroupStyle(padding: 16, onDelete: {}))
+        .disclosureGroupStyle(CustomDisclosureGroupStyle(padding: 16, onDelete: onDelete))
         .background(.thickMaterial)
         .background(exercise.isDone ? .green : .clear)
         .clipShape(RoundedRectangle(cornerRadius: .defaultCornerRadius))
     }
     
-    @ViewBuilder func label() -> some View {
+    @ViewBuilder
+    func label() -> some View {
         HStack {
             VStack(alignment: .leading) {
                 Text(exercise.uName.capitalized)
@@ -49,7 +52,7 @@ struct ExerciseRow_Preview: PreviewProvider {
     static var previews: some View {
         VStack {
             ForEach(1..<5, id: \.self) { _ in
-                ExerciseRow(exercise: Exercise.example, onTap: {})
+                ExerciseRow(exercise: Exercise.example, onTap: {}, onDelete: {})
             }
             Spacer()
         }

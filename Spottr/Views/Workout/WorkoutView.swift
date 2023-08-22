@@ -49,6 +49,10 @@ struct WorkoutView: View {
                     ForEach(workout.exercisesArray) { exercise in
                         ExerciseRow(exercise: exercise) {
                             selectedExercise = exercise
+                        } onDelete: {
+                            withAnimation(.spring()) {
+                                delete(exercise)
+                            }
                         }
                         .draggable(exercise.uid) {
                             dragPreview(exercise: exercise)
@@ -134,6 +138,13 @@ struct WorkoutView: View {
             .onAppear {
                 dragging = exercise
             }
+    }
+    
+    func delete(_ exercise: Exercise) {
+        selectedExercises.removeAll(where: {$0 == exercise.exerciseType})
+        workout.removeFromExercises(exercise)
+        moc.delete(exercise)
+        save()
     }
     
     func move(from source: Exercise, to destination: Exercise, in workout: Workout) {
