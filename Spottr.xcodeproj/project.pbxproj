@@ -28,7 +28,7 @@
 		3FC41A4B2A8CC6D900A6C038 /* CurrentExercisePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC41A4A2A8CC6D900A6C038 /* CurrentExercisePreviewView.swift */; };
 		3FC41A4D2A8CDC9900A6C038 /* AddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC41A4C2A8CDC9900A6C038 /* AddButton.swift */; };
 		3FC41A532A8E240800A6C038 /* CustomDisclosureGroupStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC41A522A8E240800A6C038 /* CustomDisclosureGroupStyle.swift */; };
-		3FC41A552A8E396700A6C038 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC41A542A8E396700A6C038 /* LabelView.swift */; };
+		3FC41A552A8E396700A6C038 /* MenuOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC41A542A8E396700A6C038 /* MenuOverlayView.swift */; };
 		3FE373FE2A80E8390026BCC6 /* Copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE373FD2A80E8390026BCC6 /* Copy.swift */; };
 		3FE374002A81DC4F0026BCC6 /* HistoryTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE373FF2A81DC4F0026BCC6 /* HistoryTabView.swift */; };
 		3FE374072A8230850026BCC6 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE374062A8230850026BCC6 /* CalendarView.swift */; };
@@ -48,6 +48,7 @@
 		3FE3745B2A879FFF0026BCC6 /* TemplatesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FE3745A2A879FFF0026BCC6 /* TemplatesListView.swift */; };
 		3FF21ECB2A8906F900F81F94 /* FitnessTrackingModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FF21EC92A8906F900F81F94 /* FitnessTrackingModel.xcdatamodeld */; };
 		3FFD5BFA2A8F985500DD5513 /* SwipeToDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD5BF92A8F985500DD5513 /* SwipeToDelete.swift */; };
+		3FFD5C092A939B6000DD5513 /* HeaderVStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD5C082A939B6000DD5513 /* HeaderVStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,7 +74,7 @@
 		3FC41A4A2A8CC6D900A6C038 /* CurrentExercisePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentExercisePreviewView.swift; sourceTree = "<group>"; };
 		3FC41A4C2A8CDC9900A6C038 /* AddButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButton.swift; sourceTree = "<group>"; };
 		3FC41A522A8E240800A6C038 /* CustomDisclosureGroupStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDisclosureGroupStyle.swift; sourceTree = "<group>"; };
-		3FC41A542A8E396700A6C038 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		3FC41A542A8E396700A6C038 /* MenuOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuOverlayView.swift; sourceTree = "<group>"; };
 		3FE373FD2A80E8390026BCC6 /* Copy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Copy.swift; sourceTree = "<group>"; };
 		3FE373FF2A81DC4F0026BCC6 /* HistoryTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTabView.swift; sourceTree = "<group>"; };
 		3FE374062A8230850026BCC6 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -90,6 +91,7 @@
 		3FE3745A2A879FFF0026BCC6 /* TemplatesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesListView.swift; sourceTree = "<group>"; };
 		3FF21ECA2A8906F900F81F94 /* FitnessTrackingModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FitnessTrackingModel.xcdatamodel; sourceTree = "<group>"; };
 		3FFD5BF92A8F985500DD5513 /* SwipeToDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeToDelete.swift; sourceTree = "<group>"; };
+		3FFD5C082A939B6000DD5513 /* HeaderVStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderVStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,8 +168,9 @@
 				3FC41A452A8CC38D00A6C038 /* GeometryReaderView.swift */,
 				3FC41A482A8CC48000A6C038 /* HeaderItem.swift */,
 				3FC41A4C2A8CDC9900A6C038 /* AddButton.swift */,
-				3FC41A542A8E396700A6C038 /* LabelView.swift */,
+				3FC41A542A8E396700A6C038 /* MenuOverlayView.swift */,
 				3FFD5BF92A8F985500DD5513 /* SwipeToDelete.swift */,
+				3FFD5C082A939B6000DD5513 /* HeaderVStack.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -351,7 +354,7 @@
 				3FE374272A864D6A0026BCC6 /* Metric.swift in Sources */,
 				3FE3742E2A8732670026BCC6 /* Bundle-Decode.swift in Sources */,
 				3FC41A462A8CC38D00A6C038 /* GeometryReaderView.swift in Sources */,
-				3FC41A552A8E396700A6C038 /* LabelView.swift in Sources */,
+				3FC41A552A8E396700A6C038 /* MenuOverlayView.swift in Sources */,
 				3FE373FE2A80E8390026BCC6 /* Copy.swift in Sources */,
 				3FC41A322A8B442800A6C038 /* DefaultStyling.swift in Sources */,
 				3FE3745B2A879FFF0026BCC6 /* TemplatesListView.swift in Sources */,
@@ -368,6 +371,7 @@
 				3F0E3A6C2A668BD1003AE994 /* WorkoutNavView.swift in Sources */,
 				3FE3742A2A864DA50026BCC6 /* ChartFilter.swift in Sources */,
 				3FF21ECB2A8906F900F81F94 /* FitnessTrackingModel.xcdatamodeld in Sources */,
+				3FFD5C092A939B6000DD5513 /* HeaderVStack.swift in Sources */,
 				3FE374442A8757AB0026BCC6 /* NextWorkoutPreviewView.swift in Sources */,
 				3FC41A4B2A8CC6D900A6C038 /* CurrentExercisePreviewView.swift in Sources */,
 				3FC41A2A2A89B9F000A6C038 /* SetList.swift in Sources */,

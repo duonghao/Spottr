@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-struct LabelView<LabelView: View, MenuView: View>: View {
+struct MenuOverlayView<Content: View, Menu: View>: View {
     
-    let label: LabelView
-    let menu: MenuView
+    let content: Content
+    let menu: Menu
     
-    init(@ViewBuilder _ label: () -> LabelView, @ViewBuilder menu: () -> MenuView) {
-        self.label = label()
+    init(@ViewBuilder _ content: () -> Content, @ViewBuilder menu: () -> Menu) {
+        self.content = content()
         self.menu = menu()
     }
     
     var body: some View {
         ZStack {
-            label
+            content
             HStack {
                 Spacer()
                 menu
@@ -30,7 +30,7 @@ struct LabelView<LabelView: View, MenuView: View>: View {
 
 struct LabelView_Previews: PreviewProvider {
     static var previews: some View {
-        LabelView {
+        MenuOverlayView {
             Text("Hi")
         } menu: {
             Text("Bye")

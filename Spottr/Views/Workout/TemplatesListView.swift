@@ -16,14 +16,12 @@ struct TemplatesListView: View {
     @Binding var path: NavigationPath
     
     var body: some View {
-        VStack {
-            HeaderView(title: "Templates") {
-                AddButton(title: "Add Template", action: { showingAddTemplateAlert = true })
-            }
-            
+        HeaderVStack(title: "Templates", spacing: 8) {
             ForEach(workouts) { workout in
                 WorkoutNavView(workout: workout)
             }
+        } navBarTrailingContent: {
+            AddButton(title: "Add Template", action: { showingAddTemplateAlert = true })
         }
         .alert("Enter a template name", isPresented: $showingAddTemplateAlert) {
             TextField("name", text: $name)
