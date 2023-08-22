@@ -73,9 +73,7 @@ struct ProgressTabView: View {
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
-                AddButton(title: "Add Exercise") {
-                    showingSelection = true
-                }
+                Button("Add Exercise") { showingSelection = true }
             }
         }
     }

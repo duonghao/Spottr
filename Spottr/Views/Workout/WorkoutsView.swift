@@ -10,7 +10,7 @@ import SwiftUI
 
 struct WorkoutsView: View {
     
-    @FetchRequest(sortDescriptors: [], predicate: nil) var programs: FetchedResults<Program>
+    @FetchRequest(sortDescriptors: [], predicate: nil) var programs: FetchedResults<Folder>
     @State private var path = NavigationPath()
    
     var body: some View {

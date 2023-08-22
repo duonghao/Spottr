@@ -18,36 +18,34 @@ struct PersistenceController {
     // A test configuration for SwiftUI previews
     static var preview: PersistenceController = {
         let controller = PersistenceController(inMemory: true)
-
-        let program = Program(context: controller.container.viewContext)
-        program.id = UUID()
-        program.isActive = true
-        program.name = "StrongLifts"
         
-        for i in 0..<3 {
-            let workout = Workout(context: controller.container.viewContext)
-            workout.id = UUID()
-            workout.name = "Workout \(i)"
-            workout.isTemplate = true
-            program.addToWorkouts(workout)
-            if i == 2 {
-                program.currentWorkout = workout
-            }
-            
-            for j in 0..<3 {
-                let exercise = Exercise(context: controller.container.viewContext)
-                exercise.id = UUID()
-                exercise.name = "Exercise \(j)"
-                exercise.exerciseType = ExerciseType(name: "Type \(j)", group: "Group \(j)")
-                workout.addToExercises(exercise)
+        for a in 0..<3 {
+            let program = Folder(context: controller.container.viewContext)
+            program.id = UUID()
+            program.name = "StrongLifts"
+        
+            for i in 0..<3 {
+                let workout = Workout(context: controller.container.viewContext)
+                workout.id = UUID()
+                workout.name = "Workout \(i)"
+                workout.isTemplate = true
+                program.addToWorkouts(workout)
                 
-                for k in 0..<3 {
-                    let set = ExerciseSet(context: controller.container.viewContext)
-                    set.id = UUID()
-                    set.reps = Int16(10)
-                    set.weight = 60
+                for j in 0..<3 {
+                    let exercise = Exercise(context: controller.container.viewContext)
+                    exercise.id = UUID()
+                    exercise.name = "Exercise \(j)"
+                    exercise.exerciseType = ExerciseType(name: "Type \(j)", group: "Group \(j)")
+                    workout.addToExercises(exercise)
                     
-                    exercise.addToSets(set)
+                    for k in 0..<3 {
+                        let set = ExerciseSet(context: controller.container.viewContext)
+                        set.id = UUID()
+                        set.reps = Int16(10)
+                        set.weight = 60
+                        
+                        exercise.addToSets(set)
+                    }
                 }
             }
         }

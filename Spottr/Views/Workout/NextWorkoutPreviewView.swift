@@ -9,7 +9,7 @@ import SwiftUI
 
 struct NextWorkoutPreviewView: View {
     
-    @ObservedObject var program: Program
+    @ObservedObject var program: Folder
     
     var body: some View {
         HStack(alignment: .top) {
@@ -18,11 +18,11 @@ struct NextWorkoutPreviewView: View {
                 Text("Next Workout")
                     .font(.subheadline)
                     .padding(.bottom, 4)
-                Text(program.currentWorkout?.uName ?? "NA")
-                    .font(.headline)
-                Text(program.currentWorkout?.uniqueExerciseGroups.map({ $0.capitalized }).joined(separator: ", ") ?? "NA")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+//                Text(program.currentWorkout?.uName ?? "NA")
+//                    .font(.headline)
+//                Text(program.currentWorkout?.uniqueExerciseGroups.map({ $0.capitalized }).joined(separator: ", ") ?? "NA")
+//                    .font(.caption)
+//                    .foregroundColor(.secondary)
             }
             
             Spacer()
@@ -46,7 +46,7 @@ struct NextWorkoutPreviewView: View {
 struct NextWorkoutPreviewView_Previews: PreviewProvider {
     static var previews: some View {
         return NavigationView {
-            NextWorkoutPreviewView(program: Program.example)
+            NextWorkoutPreviewView(program: Folder.example)
         }
     }
 }

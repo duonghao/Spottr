@@ -8,7 +8,7 @@
 import CoreData
 import Foundation
 
-extension Program {
+extension Folder {
     var uName: String {
         name ?? ""
     }
@@ -17,19 +17,52 @@ extension Program {
         return (workouts?.array ?? []) as! [Workout]
     }
     
-    static var example: Program {
+    static var example: Folder {
         let context = PersistenceController.preview.container.viewContext
         
-        let fetchRequest: NSFetchRequest<Program> = Program.fetchRequest()
+        let fetchRequest: NSFetchRequest<Folder> = Folder.fetchRequest()
         fetchRequest.fetchLimit = 1
         
         let results = try? context.fetch(fetchRequest)
         
         return (results?.first!)!
     }
+    
+    static var defFolderName: String {
+        "My Templates"
+    }
+    
+    static var defaultFolder: Folder {
+        let context = PersistenceController.shared.container.viewContext
+        
+        let fetchRequest: NSFetchRequest<Folder> = Folder.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "name == %@", defFolderName)
+        fetchRequest.fetchLimit = 1
+        
+        let results = try? context.fetch(fetchRequest)
+        
+        if let defFolder = results?.first {
+            return defFolder
+        } else {
+            let context = PersistenceController.shared.container.viewContext
+            
+            let newFolder = Folder(context: context)
+            newFolder.id = UUID()
+            newFolder.name = defFolderName
+            
+            PersistenceController.shared.save()
+            
+            return newFolder
+        }
+    }
 }
 
 extension Workout {
+    
+    var uid: String {
+        id?.uuidString ?? UUID().uuidString
+    }
+    
     var uName: String {
         name ?? ""
     }

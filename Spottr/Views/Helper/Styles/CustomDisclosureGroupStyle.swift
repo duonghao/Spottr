@@ -10,26 +10,36 @@ import Foundation
 
 struct CustomDisclosureGroupStyle: DisclosureGroupStyle {
     
-    var onDelete: () -> Void
+    var padding: Double = 0
+    var onDelete: (() -> Void)? = nil
 
     func makeBody(configuration: Configuration) -> some View {
         VStack(alignment: .center, spacing: 0) {
-            HStack(alignment: .center, spacing: 0) {
-                configuration.label
-                Spacer()
-                Menu {
-                    Button("Expand") { expand(configuration) }
-                    Button("Delete", role: .destructive, action: onDelete)
-                } label: {
-                    Label("Options", systemImage: "ellipsis")
-                        .labelStyle(.iconOnly)
-                        .padding()
+            ZStack {
+                HStack(alignment: .center, spacing: 0) {
+                    configuration.label
+                    Spacer()
                 }
-                .contentShape(Circle())
+                .contentShape(Rectangle())
+                .onTapGesture(count: 1) { expand(configuration) }
+                
+                HStack {
+                    Spacer()
+                    Menu {
+                        Button("Expand") { expand(configuration) }
+                        if let onDelete = onDelete {
+                            Button("Delete", role: .destructive, action: onDelete)
+                        }
+                    } label: {
+                        Label("Options", systemImage: "ellipsis")
+                            .labelStyle(.iconOnly)
+                            .padding([.top, .bottom, .leading])
+                    }
+                    .contentShape(Rectangle())
+                }
             }
-            .padding()
-            .contentShape(Rectangle())
-            .onTapGesture(count: 2) { expand(configuration) }
+            .padding(padding)
+
             if configuration.isExpanded {
                 configuration.content
                     .disclosureGroupStyle(self)

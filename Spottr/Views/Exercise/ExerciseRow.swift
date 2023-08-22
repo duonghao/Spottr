@@ -21,7 +21,7 @@ struct ExerciseRow: View {
         } label: {
             label()
         }
-        .disclosureGroupStyle(CustomDisclosureGroupStyle(onDelete: {}))
+        .disclosureGroupStyle(CustomDisclosureGroupStyle(padding: 16, onDelete: {}))
         .background(.thickMaterial)
         .background(exercise.isDone ? .green : .clear)
         .clipShape(RoundedRectangle(cornerRadius: .defaultCornerRadius))
