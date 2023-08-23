@@ -43,7 +43,7 @@ extension DateFormatter {
 
 struct CalendarView<DateView: View>: View {
     
-    @Binding var month: Date
+    let interval: DateInterval
     let showHeaders: Bool
     let onHeaderAppear: (Date) -> Void
     let content: (Date) -> DateView
@@ -59,10 +59,10 @@ struct CalendarView<DateView: View>: View {
             ForEach(months, id: \.self) { month in
                 
                 // Monthly title
-                Section(header: title(for: month)) {
+                Section(header: monthHeader(for: month)) {
                     
                     // Weekday header
-                    ForEach(days[month, default: []].prefix(7), id: \.timeIntervalSince1970, content: header)
+                    ForEach(days[month, default: []].prefix(7), id: \.timeIntervalSince1970, content: weekdayHeader)
                     
                     // Calendar
                     ForEach(days[month, default: []], id: \.self) { date in
@@ -76,9 +76,6 @@ struct CalendarView<DateView: View>: View {
             }
         }
         .onAppear(perform: generateDates)
-        .onChange(of: month) { _ in
-            generateDates()
-        }
     }
     
     private var columns: [GridItem] {
@@ -88,7 +85,7 @@ struct CalendarView<DateView: View>: View {
     
     private func generateDates() {
         months = calendar.generateDates(
-            inside: DateInterval(start: month, end: month),
+            inside: interval,
             matching: DateComponents(day: 1, hour: 0, minute: 0, second: 0)
         )
         
@@ -106,19 +103,23 @@ struct CalendarView<DateView: View>: View {
         }
     }
     
-    private func header(for date: Date) -> some View {
+    private func weekdayHeader(for date: Date) -> some View {
         let weekDayDateFormatter = DateFormatter()
         weekDayDateFormatter.dateFormat = "EEEEE"
         weekDayDateFormatter.calendar = calendar
         
         return Text(weekDayDateFormatter.string(from: date))
     }
-
-    private func title(for month: Date) -> some View {
-        Group {
+    
+    private func monthHeader(for month: Date) -> some View {
+        let monthDateFormatter = DateFormatter()
+        monthDateFormatter.dateFormat = "MMMM"
+        monthDateFormatter.calendar = calendar
+        
+        return Group {
             if showHeaders {
-                Text(DateFormatter.monthAndYear.string(from: month))
-                    .font(.title)
+                Text(monthDateFormatter.string(from: month))
+                    .bold()
                     .padding()
             }
         }

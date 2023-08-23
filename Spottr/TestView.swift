@@ -9,11 +9,8 @@ import SwiftUI
 
 struct TestView: View {
     var body: some View {
-        DisclosureGroup("Hello") {
-            EmptyView()
+        VStack {
         }
-        .disclosureGroupStyle(CustomDisclosureGroupStyle())
-        .background(.red)
     }
 }
 

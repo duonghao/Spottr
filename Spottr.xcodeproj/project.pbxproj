@@ -52,6 +52,7 @@
 		3FFD5C0F2A94B8E200DD5513 /* AddFolderSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD5C0E2A94B8E200DD5513 /* AddFolderSheet.swift */; };
 		3FFD5C112A94DA8A00DD5513 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD5C102A94DA8A00DD5513 /* TestView.swift */; };
 		3FFD5C132A94E62D00DD5513 /* AddWorkoutSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD5C122A94E62D00DD5513 /* AddWorkoutSheet.swift */; };
+		3FFD5C152A95D9C900DD5513 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFD5C142A95D9C900DD5513 /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		3FFD5C0E2A94B8E200DD5513 /* AddFolderSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFolderSheet.swift; sourceTree = "<group>"; };
 		3FFD5C102A94DA8A00DD5513 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		3FFD5C122A94E62D00DD5513 /* AddWorkoutSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutSheet.swift; sourceTree = "<group>"; };
+		3FFD5C142A95D9C900DD5513 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,7 +124,6 @@
 				3F0E3A702A66A55A003AE994 /* Workout */,
 				3F0E3A6F2A66A552003AE994 /* Exercise */,
 				3F4C42E02A7E5EF500CFC7C4 /* Set */,
-				3F0E3A772A66B996003AE994 /* Helper */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +180,7 @@
 				3FC41A542A8E396700A6C038 /* MenuOverlayView.swift */,
 				3FFD5BF92A8F985500DD5513 /* SwipeToDelete.swift */,
 				3FFD5C082A939B6000DD5513 /* HeaderVStack.swift */,
+				3FFD5C142A95D9C900DD5513 /* Date.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -211,6 +213,7 @@
 		3F8D23272A666EF10071BBC9 /* Spottr */ = {
 			isa = PBXGroup;
 			children = (
+				3F0E3A772A66B996003AE994 /* Helper */,
 				3FE3742F2A87339E0026BCC6 /* Resources */,
 				3F0E3A602A668271003AE994 /* Model */,
 				3F0E3A5E2A668259003AE994 /* Views */,
@@ -389,6 +392,7 @@
 				3FC41A2A2A89B9F000A6C038 /* SetList.swift in Sources */,
 				3FE374002A81DC4F0026BCC6 /* HistoryTabView.swift in Sources */,
 				3FC41A532A8E240800A6C038 /* CustomDisclosureGroupStyle.swift in Sources */,
+				3FFD5C152A95D9C900DD5513 /* Date.swift in Sources */,
 				3FFD5C112A94DA8A00DD5513 /* TestView.swift in Sources */,
 				3F0FE5DA2A7283CC009840E0 /* ExerciseRow.swift in Sources */,
 				3F4C42E42A7E5F4600CFC7C4 /* SetRow.swift in Sources */,

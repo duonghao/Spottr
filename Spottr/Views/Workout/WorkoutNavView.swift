@@ -34,7 +34,6 @@ struct WorkoutNavView: View {
                 workoutSummary
             }
             Spacer()
-            endDate
             optionsLabel.hidden()
         }
         .padding()
@@ -56,16 +55,6 @@ struct WorkoutNavView: View {
         Label("Options", systemImage: "ellipsis")
             .labelStyle(.iconOnly)
             .padding()
-    }
-    
-    @ViewBuilder
-    var endDate: some View {
-        if let endDate = workout.endDate {
-            Text(endDate.formatted(date: .abbreviated, time: .omitted))
-                .padding()
-                .background(.thickMaterial)
-                .clipShape(RoundedRectangle(cornerRadius: .defaultCornerRadius))
-        }
     }
     
     var exerciseGroups: [String] {
