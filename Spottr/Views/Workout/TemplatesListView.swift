@@ -10,7 +10,7 @@ import SwiftUI
 struct TemplatesListView: View {
     
     @Environment(\.managedObjectContext) var moc
-    @FetchRequest(sortDescriptors: [], predicate: nil) var folders: FetchedResults<Folder>
+    @FetchRequest(sortDescriptors: [], predicate: nil, animation: .spring()) var folders: FetchedResults<Folder>
     @State private var showingAddTemplateSheet: Bool = false
     @State private var showingAddFolderSheet: Bool = false
     @State private var dragging: Workout?
@@ -19,7 +19,16 @@ struct TemplatesListView: View {
     var body: some View {
         HeaderVStack(title: "Templates", spacing: 8) {
             ForEach(folders) { folder in
-                group(folder)
+                FolderGroup(folder, dragging: $dragging, onMoveToFolder: move, onMoveToWorkouts: move)
+                .navigationDestination(for: Workout.self) { workout in
+                    WorkoutView(workout: workout) { oldValue, newValue in
+                        guard let sourceFolder = folders.first(where: { $0.workoutsArray.contains(oldValue)}) else {
+                            return
+                        }
+                        sourceFolder.removeFromWorkouts(oldValue)
+                        sourceFolder.addToWorkouts(newValue)
+                    }
+                }
             }
         } navBarTrailingContent: {
             Menu {
@@ -31,7 +40,9 @@ struct TemplatesListView: View {
             }
         }
         .sheet(isPresented: $showingAddTemplateSheet) {
-            AddTemplateSheet(onSave: { _ in})
+            AddTemplateSheet { newTemplate in
+                path.append(newTemplate)
+            }
         }
         .sheet(isPresented: $showingAddFolderSheet) {
             AddFolderSheet()
@@ -39,36 +50,6 @@ struct TemplatesListView: View {
     }
     
     // MARK: - Views
-    
-    private func workouts(from folder: Folder) -> some View {
-        VStack {
-            ForEach(folder.workoutsArray) { workout in
-                WorkoutNavView(workout: workout)
-                    .draggable(workout.uid) {
-                        dragPreview(workout: workout)
-                    }
-                    .dropDestination(for: String.self) { _, _ in
-                        dragging = nil
-                        return false
-                    } isTargeted: { status in
-                        withAnimation(.spring()) {
-                            if let dragging, status, dragging != workout {
-                                move(dragging, to: folder, at: workout)
-                            }
-                        }
-                    }
-            }
-        }
-    }
-    
-    @ViewBuilder
-    private func dragPreview(workout: Workout) -> some View {
-        EmptyView()
-            .frame(width: 1, height: 1)
-            .onAppear {
-                dragging = workout
-            }
-    }
     
     private var folderAdder: some View {
         Button {
@@ -83,31 +64,6 @@ struct TemplatesListView: View {
             showingAddTemplateSheet = true
         } label: {
             Label("Template", systemImage: "list.dash.header.rectangle")
-        }
-    }
-    
-    private func group(_ folder: Folder) -> some View {
-        DisclosureGroup {
-            workouts(from: folder)
-        } label: {
-            Text(folder.uName)
-                .font(.headline)
-        }
-        .disclosureGroupStyle(CustomDisclosureGroupStyle(onDelete: {}))
-        .padding()
-        .overlay(
-            RoundedRectangle(cornerRadius: .defaultCornerRadius)
-                .stroke(.primary, lineWidth: 1)
-        )
-        .dropDestination(for: String.self) { _, _ in
-            dragging = nil
-            return false
-        } isTargeted: { status in
-            withAnimation(.spring()) {
-                if let dragging, status {
-                    move(dragging, to: folder)
-                }
-            }
         }
     }
     
@@ -142,6 +98,7 @@ struct TemplatesListView: View {
         save()
     }
     
+
     private func deleteTemplate(template: Workout) {
         moc.delete(template)
         save()

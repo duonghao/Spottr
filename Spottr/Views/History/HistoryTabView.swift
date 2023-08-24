@@ -83,6 +83,9 @@ struct HistoryTabView: View {
                         HStack(spacing: 8) {
                             date(workout.uEndDate)
                             WorkoutNavView(workout: workout)
+                                .navigationDestination(for: Workout.self) { workout in
+                                    WorkoutView(workout: workout)
+                                }
                         }
                     }
                     

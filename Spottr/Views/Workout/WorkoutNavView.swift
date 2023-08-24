@@ -11,13 +11,11 @@ struct WorkoutNavView: View {
     
     @Environment(\.managedObjectContext) var moc
     @ObservedObject var workout: Workout
+    var onDelete: ((Workout) -> Void)? = nil
     
     var body: some View {
         MenuOverlayView {
             NavigationLink(value: workout, label: workoutLinkLabel)
-            .navigationDestination(for: Workout.self) { workout in
-                WorkoutView(workout: workout)
-            }
             .buttonStyle(.plain)
         } menu: {
             Menu {
@@ -63,6 +61,7 @@ struct WorkoutNavView: View {
     }
     
     func deleteWorkout() {
+        onDelete?(workout)
         moc.delete(workout)
         save()
     }
@@ -74,6 +73,6 @@ struct WorkoutNavView: View {
 
 struct WorkoutNavView_Previews: PreviewProvider {
     static var previews: some View {
-        WorkoutNavView(workout: Workout.example)
+        WorkoutNavView(workout: Workout.example, onDelete: {_ in })
     }
 }

@@ -32,7 +32,9 @@ struct WorkoutsView: View {
             }
         }
         .navigationDestination(for: Workout.self) { workout in
-            WorkoutView(workout: workout)
+            WorkoutView(workout: workout) { _, _ in
+                
+            }
         }
     }
     

@@ -25,9 +25,11 @@ struct WorkoutView: View {
     @State private var hasFinished: Bool
     @State private var allSetsFinished: Bool
     @State private var dragging: Exercise?
+    var onStart: ((Workout, Workout) -> Void)?
     
-    init(workout: Workout) {
+    init(workout: Workout, onStart: ((Workout, Workout) -> Void)? = nil) {
         self.workout = workout
+        self.onStart = onStart
         _hasStarted = State(initialValue: workout.hasStarted)
         _hasFinished = State(initialValue: workout.hasFinished)
         _allSetsFinished = State(initialValue: workout.allSetsFinished)
@@ -38,45 +40,16 @@ struct WorkoutView: View {
     var body: some View {
         VStack {
             if workout.endDate != nil {
-                DatePicker("End Date", selection: $datePicked, displayedComponents: .date)
-                    .padding()
-                    .datePickerStyle(.compact)
-                    .onChange(of: datePicked, perform: updateEndDate)
-                    .labelsHidden()
+                endDateChanger
             }
-            ScrollView {
-                VStack {
-                    ForEach(workout.exercisesArray) { exercise in
-                        ExerciseRow(exercise: exercise) {
-                            selectedExercise = exercise
-                        } onDelete: {
-                            withAnimation(.spring()) {
-                                delete(exercise)
-                            }
-                        }
-                        .draggable(exercise.uid) {
-                            dragPreview(exercise: exercise)
-                        }
-                        .dropDestination(for: String.self) { _, _ in
-                            dragging = nil
-                            return false
-                        } isTargeted: { status in
-                            if let dragging, status, dragging != exercise {
-                                move(from: dragging, to: exercise, in: workout)
-                            }
-                        }
+            exercises
+                .scrollContentBackground(.hidden)
+                .scrollDismissesKeyboard(.immediately)
+                .safeAreaInset(edge: .bottom) {
+                    if (hasStarted && !hasFinished) {
+                        CurrentExercisePreviewView(workout: workout).transition(.move(edge: .bottom))
                     }
-                    addExerciseButton()
                 }
-                .animation(.spring(), value: workout.exercisesArray)
-            }
-            .scrollContentBackground(.hidden)
-            .scrollDismissesKeyboard(.immediately)
-            .safeAreaInset(edge: .bottom) {
-                if (hasStarted && !hasFinished) {
-                    CurrentExercisePreviewView(workout: workout).transition(.move(edge: .bottom))
-                }
-            }
             Spacer()
         }
         .environmentObject(workout)
@@ -94,20 +67,7 @@ struct WorkoutView: View {
                 EditButton()
             }
             ToolbarItem(placement: .bottomBar) {
-                HStack {
-                    Button("Notes") {}
-                    Spacer()
-                    if (!hasStarted) {
-                        Button(action: startWorkout) {
-                            Text("Start")
-                        }
-                    }
-                    else if (!hasFinished) {
-                        Button("Finish", role: .destructive, action: finishWorkout)
-                            .disabled(!hasStarted)
-                    }
-                }
-                Divider()
+                buttonStack
             }
         }
         .onReceive(workout.objectWillChange) { newValue in
@@ -119,7 +79,61 @@ struct WorkoutView: View {
         }
     }
     
-    @ViewBuilder func addExerciseButton() -> some View {
+    var endDateChanger: some View {
+        DatePicker("End Date", selection: $datePicked, displayedComponents: .date)
+            .padding()
+            .datePickerStyle(.compact)
+            .onChange(of: datePicked, perform: updateEndDate)
+            .labelsHidden()
+    }
+    
+    var exercises: some View {
+        ScrollView {
+            VStack {
+                ForEach(workout.exercisesArray) { exercise in
+                    ExerciseRow(exercise: exercise) {
+                        selectedExercise = exercise
+                    } onDelete: {
+                        withAnimation(.spring()) {
+                            delete(exercise)
+                        }
+                    }
+                    .draggable(exercise.uid) {
+                        dragPreview(exercise: exercise)
+                    }
+                    .dropDestination(for: String.self) { _, _ in
+                        dragging = nil
+                        return false
+                    } isTargeted: { status in
+                        if let dragging, status, dragging != exercise {
+                            move(from: dragging, to: exercise, in: workout)
+                        }
+                    }
+                }
+                addExerciseButton()
+            }
+            .animation(.spring(), value: workout.exercisesArray)
+        }
+    }
+    
+    var buttonStack: some View {
+        HStack {
+            Button("Notes") {}
+            Spacer()
+            if (!hasStarted) {
+                Button(action: startWorkout) {
+                    Text("Start")
+                }
+            }
+            else if (!hasFinished) {
+                Button("Finish", role: .destructive, action: finishWorkout)
+                    .disabled(!hasStarted)
+            }
+        }
+    }
+    
+    @ViewBuilder
+    func addExerciseButton() -> some View {
         Button {
             showingSelectExercise = true
         } label: {
@@ -175,7 +189,11 @@ struct WorkoutView: View {
     func startWorkout() {
         if workout.isTemplate {
             let newTemplate = workout.copyEntireObjectGraph(context: moc) as? Workout
-            newTemplate?.id = UUID()
+            guard let newTemplate = newTemplate else {
+                return
+            }
+            newTemplate.id = UUID()
+            onStart?(workout, newTemplate)
         }
         
         if workout.startDate == nil {
@@ -237,7 +255,7 @@ struct WorkoutView: View {
 struct WorkoutView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            WorkoutView(workout: Workout.example)
+            WorkoutView(workout: Workout.example, onStart: { _, _ in })
         }
         
     }
